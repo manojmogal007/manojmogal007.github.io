@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .App-logo {
@@ -27,6 +28,9 @@
 .App-link {
   color: #61dafb;
 }
+.home_next{
+  height: 500px;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -34,5 +38,228 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.home {
+  background-position:'center';
+  background-attachment:'fixed';
+  background-repeat:'no-repeat';
+  background-size:'auto';
+  background-image: url("https://wallpaperaccess.com/full/5651990.jpg") ;
+  height: 800px;
+}
+.developer{
+  height: 100%;
+  width: 100%;
+}
+.sub_dev{
+  position: relative;
+  top: 40%;
+  text-align: left;
+  margin-left: 200px;
+}
+.sub_dev>h3{
+  font-size: 30px;
+  /* font-weight: bold; */
+  color: white;
+  text-shadow: #61dafb;
+}
+.sub_dev>h1{
+  font-size: 55px;
+  font-weight: bold;
+  color: white;
+}
+.resume_btn{
+  background-color: none;
+  width: 150px;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight:bold;
+  margin-top: 20px;
+  border: 1px solid white;
+  color: white;
+  
+}
+.resume_btn:hover{
+ background-color: white;
+ color: black;
+ border: teal;
+}
+
+.home_next{
+  /* background-color: rgb(243, 237, 237); */
+  display: flex;
+  /* background: linear-gradient(241deg, rgb(251, 251, 255) 7.24%, rgb(215, 223, 252) 85.60%); */
+    background: linear-gradient(132deg, rgb(227, 244, 253) 32.99%, rgb(170, 209, 226) 100.00%);
+    /* background: linear-gradient(258deg, rgb(221, 221, 221) 11.34%, rgb(110, 136, 161) 90.45%); */
+    height: 700px;
+}
+.profile_pic{
+  width: 50%;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+ position: relative;
+ top: 20%;
+ /* border: 1px solid red; */
+}
+.profile_pic>img{
+  border-radius: 20px;
+  /* width: 40%; */
+}
+
+.description{
+  width: 50%;
+  /* border: 1px solid black; */
+  height: 40%;
+  margin: auto;
+}
+.typewriter{
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  text-align: left;
+}
+.typewriter>p{
+  margin-right: 5px;
+}
+.type{
+ color: #d2691e;
+}
+
+
+/* ===================================================================================== */
+@media (max-width: 870px) {
+  .sub_dev{
+    margin-left: 100px;
+  }
+  .sub_dev>h3{
+    font-size: 25px;
+  }
+  .sub_dev>h1{
+    font-size: 35px;
+  }
+  .resume_btn{
+    width: 130px;
+    padding: 6;
+  }
+  .home_next{
+    height: 700px;
+    display: grid;
+    grid-template-columns:100%;
+    /* grid-template-rows: 300px 300px; */
+  }
+  .profile_pic{
+    width: 100%;
+    height: 300px;
+    /* height: 50%; */
+   top: 14%;
+  }
+  .description{
+    width: 90%;
+    height: 110%;
+    margin: auto;
+    margin-top: -80px;
+  }
+  .typewriter{
+    font-size: 20px;
+    
+  }
+  
+}
+@media (max-width: 560px) {
+  .home{
+    height: 550px;
+  }
+  .sub_dev{
+    margin-left: 15px;
+  }
+  .sub_dev>h3{
+    font-size: 15px;
+  }
+  .sub_dev>h1{
+    font-size: 20px;
+  }
+  .resume_btn{
+    width: 100px;
+    padding: 3;
+    font-size: 13px;
+  }
+  .home_next{
+    height: 560px;
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 300px 300px;
+  }
+  .profile_pic{
+    width: 100%;
+    height: 240px;
+    /* height: 50%; */
+   top: 14%;
+  }
+ 
+  .description{
+    width: 95%;
+    height: 70%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .typewriter{
+    font-size: 16px;
+    
+  }
+  
+}
+/* <-------------------only for profile picture section ----------------------> */
+@media (max-width: none) {
+  /* 1000 */
+  .home_next{
+    height: 700px;
+    display: grid;
+    grid-template-columns:100%;
+    /* grid-template-rows: 300px 300px; */
+  }
+  .profile_pic{
+    width: 100%;
+    height: 300px;
+    /* height: 50%; */
+   top: 14%;
+  }
+  .description{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-top: -60px;
+  }
+  .typewriter{
+    font-size: 21px;
+    
+  }
+}
+
+@media (max-width: 400px) {
+  /* 300 */
+  .home_next{
+    height: 510px;
+    display: grid;
+    grid-template-columns:100%;
+    /* grid-template-rows: 300px 300px; */
+  }
+  .profile_pic{
+    width: 100%;
+    height: 180px;
+    /* height: 50%; */
+   top: 14%;
+  }
+  .description{
+    width: 95%;
+    height: 65%;
+    margin: auto;
+    margin-top: -40px;
+  }
+  .typewriter{
+    font-size: 11px;
+    
   }
 }
