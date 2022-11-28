@@ -8,14 +8,7 @@ import Typewriter from 'typewriter-effect'
 
 function App() {
 
-  const DownloadButton = props => {
-    const downloadFile = () => {
-      window.location.href = "https://drive.google.com/file/d/1lc9TtM077mUGi0uSnV7u60tNXNxYhqM9/view?usp=share_link"
-    }
-    return (
-              <button onClick={downloadFile} />
-    )
-  }
+
   
   const {setcolor}=useContext(Navcontext)
   return (
@@ -29,9 +22,10 @@ function App() {
                <div className='sub_dev'>
                   <h3 >Hello, I'm a</h3>
                   <h1>Full Stack Web Developer</h1>
-                  <a href='https://media.geeksforgeeks.org/gfg-gg-logo.svg' download='resume' target='_blank'>
-                    <button className='resume_btn' onClick={DownloadButton}>Resume</button>
+                  <a href="./Resume/resume.pdf" download >
+                    <button className='resume_btn' >Resume</button>
                   </a>
+                  
                </div>
           </div>
       </div>
