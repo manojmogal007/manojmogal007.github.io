@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import resume from '../Resume/manoj_resume.pdf'
+// import { Navcontext } from '../Context/Navcontext'
 import './Nav.css'
 const Nav = () => {
     const [fix,setfix]=useState(false)
@@ -20,9 +22,10 @@ const Nav = () => {
 <div className={fix?"_menu":"menu"}>
 <li onClick={()=>console.log("Home clicked")}><button >Home</button></li>
 <li onClick={()=>console.log("About")}><button >About</button></li>
-<li className='zoom' ><button >Skills</button></li>
+<li  ><button >Skills</button></li>
 <li onClick={()=>console.log("skills")}><button >Project</button></li>
 <li onClick={()=>console.log("contact")}><button >Contact</button></li>
+<a href={resume} download='resume'><li ><button >Resume</button></li></a>
 </div>
 </ul>
 </nav>
