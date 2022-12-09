@@ -1,5 +1,6 @@
 .div{
     height: 120px;
+   text-align: left;
     /* width: 100px; */
     /* border: 1px solid red; */
 }
@@ -7,14 +8,17 @@
     height: 100%;
     margin: auto;
 }
+.div>h4{
+    color: white;
+}
 /* .div:hover{
     transform: scale(1.5)
 } */
 .main{
-    margin-top: 20px;
+    padding-top: 20px;
     /* background-color: #282c34; */
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 @media (max-width: 870px) {

@@ -3,57 +3,8 @@ import Slider from "react-slick";
 import './Crousel.css'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import {SiJavascript} from 'react-icons/si'
 
-// const Crousel = () => {
-//     const settings = {
-//         dots: true,
-//         infinite: false,
-//         speed: 500,
-//         slidesToShow: 3,
-//         slidesToScroll: 3,
-//         initialSlide: 0,
-//         responsive: [
-//           {
-//             breakpoint: 1024,
-//             settings: {
-//               slidesToShow: 3,
-//               slidesToScroll: 3,
-//               infinite: true,
-//               dots: true
-//             }
-//           },
-//           {
-//             breakpoint: 600,
-//             settings: {
-//               slidesToShow: 2,
-//               slidesToScroll: 2,
-//               initialSlide: 2
-//             }
-//           },
-//           {
-//             breakpoint: 480,
-//             settings: {
-//               slidesToShow: 1,
-//               slidesToScroll: 1
-//             }
-//           }
-//         ]
-//       };
-//   return (
-//     <div>
-//         <Slider {...settings}>
-//             <div style={{width:'300px',height:'200px',backgroundColor:"red"}}>1</div>
-//             <div style={{width:'300px',height:'200px',backgroundColor:"red"}}>2</div>
-//             <div style={{width:'300px',height:'200px',backgroundColor:"red"}}>3</div>
-//             <div style={{width:'300px',height:'200px',backgroundColor:"red"}}>4</div>
-//             <div style={{width:'300px',height:'200px',backgroundColor:"red"}}>5</div>
-//             <div style={{width:'300px',height:'200px',backgroundColor:"red"}}>6</div>
-//         </Slider>
-//     </div>
-//   )
-// }
-
-// export default Crousel
 export default class PauseOnHover extends Component {
     render() {
       var settings = {
@@ -109,7 +60,8 @@ export default class PauseOnHover extends Component {
         <div className="main">
           <Slider {...settings}>
             <div  className="div">
-             <img src="https://tse2.mm.bing.net/th?id=OIP.I5XOh9o_kbTNsXnsIc53aAHaHa&pid=Api&P=0"/>
+              <SiJavascript style={{color:'#fada5e',height:'100px',width:'100px'}}/>
+              <h4 >Javascript</h4>
             </div>
             <div className="div">
             <img src="https://tse3.mm.bing.net/th?id=OIP.1bnxcVBT_bKoNqP-tLjcpgHaJf&pid=Api&P=0"/>
