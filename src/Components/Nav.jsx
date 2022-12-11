@@ -9,7 +9,7 @@ import './Nav.css'
 
 const Nav = () => {
     const [fix,setfix]=useState(false)
-    const {theme,settheme,gotoabout,gotohome,gotoskill,gotoproject}=useContext(Navcontext)
+    const {theme,settheme,gotoabout,gotohome,gotoskill,gotoproject,gotocontact}=useContext(Navcontext)
     
 
     const setsticky=()=>{
@@ -33,7 +33,7 @@ const Nav = () => {
 <li onClick={gotoabout}><button >About</button></li>
 <li onClick={gotoskill} ><button >Skills</button></li>
 <li onClick={gotoproject}><button >Project</button></li>
-<li onClick={()=>console.log("contact")}><button >Contact</button></li>
+<li onClick={gotocontact}><button >Contact</button></li>
 <a href={resume} download='resume'><li ><button >Resume</button></li></a>
 <li><button onClick={()=>settheme(!theme)}>{theme? <MdOutlineLightMode className='light'/>:<MdOutlineDarkMode className='dark' />}</button></li>
 </div>

@@ -39,6 +39,9 @@
     filter: brightness(130%);
     cursor: pointer;
 }
+._email_input,._email_msg{
+    color: #293243;
+}
 
 @media (max-width: 560px) {
     ._email_input,._email_msg{

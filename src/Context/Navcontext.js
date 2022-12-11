@@ -10,6 +10,7 @@ export const Navcontextprovider = ({children}) => {
   const aboutref=useRef(null)
   const skillref=useRef(null)
   const projectref=useRef(null)
+  const contactref=useRef(null)
 // console.log(color)
 
 const gotoabout=()=>{
@@ -24,8 +25,11 @@ const gotoskill=()=>{
 const gotoproject=()=>{
   window.scrollTo({top:projectref.current.offsetTop, behavior:'smooth'})
 }
+const gotocontact=()=>{
+  window.scrollTo({top:contactref.current.offsetTop, behavior:'smooth'})
+}
 
-  const allvalue={color,setcolor,theme,settheme,aboutref,gotoabout,homeref,gotohome,skillref,projectref,gotoproject,gotoskill}
+  const allvalue={color,setcolor,theme,settheme,aboutref,gotoabout,homeref,gotohome,skillref,projectref,gotoproject,gotoskill,gotocontact,contactref}
   return (
     <Navcontext.Provider value={allvalue}>
         {children}

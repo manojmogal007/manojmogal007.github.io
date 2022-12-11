@@ -460,6 +460,28 @@ color: white;
 /* .copy{
   color: black;
 } */
+.stats{
+  background-color:rgb(254, 248, 248) ;
+}
+._stats{
+  background-color: #282c34;
+  /* border: 1px solid red; */
+}
+.state1{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 70%;
+  gap:30px;
+  margin: auto;
+  padding-top: 40px;
+}
+.state1>img{
+  margin: auto;
+}
+.state2>img{
+  margin: auto;
+  padding-top: 40px;
+}
 /* ===================================================================================== */
 @media (max-width: 900px) {
   .sub_dev,._sub_dev{
@@ -559,7 +581,17 @@ color: white;
   font-weight: 500;
   padding-top: 40px;
 }
-
+.state1{
+  width: 80%;
+  gap: 20px;
+  margin: auto;
+}
+.state1>img{
+  margin: auto;
+}
+.state2>img{
+  width: 40%;
+}
 }
 @media (max-width: 560px) {
   .home{
@@ -674,6 +706,22 @@ color: white;
   ._calendar>h1,._about_me>h1,._project>h1,._skills>h1,._contact>h1{
     font-size: 30px;
     padding-top: 25px;
+  }
+  .state1{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    margin: auto;
+  }
+  .state1>img{
+    margin: auto;
+  }
+  .state2{
+    margin-top: -17px;
+  }
+  .state2>img{
+    width: 70%;
   }
 }
 /* <-------------------only for profile picture section ----------------------> */

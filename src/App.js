@@ -24,13 +24,27 @@ import Email from './Components/Email';
 import Calender from './Components/Calender';
 function App() {
 // document.title("Manoj")
+
   useEffect(()=>{
     Aos.init({duration:1000})
   },[])
 
   
-  const {theme,aboutref,homeref,skillref,projectref}=useContext(Navcontext)
+  const {theme,aboutref,homeref,skillref,projectref,contactref}=useContext(Navcontext)
 console.log(skillref)
+
+const html={
+  hcommit:'https://github-readme-stats.vercel.app/api?username=manojmogal007&theme=html&hide_border=false&include_all_commits=true&count_private=true',
+  hcont:"https://github-readme-streak-stats.herokuapp.com/?user=manojmogal007&theme=html&hide_border=false",
+  hlang:"https://github-readme-stats.vercel.app/api/top-langs/?username=manojmogal007&theme=html&hide_border=false&include_all_commits=true&count_private=false&layout=compact"
+}
+const react={
+  rcommit:'https://github-readme-stats.vercel.app/api?username=manojmogal007&theme=react&hide_border=false&include_all_commits=true&count_private=true',
+  rcont:"https://github-readme-streak-stats.herokuapp.com/?user=manojmogal007&theme=react&hide_border=false",
+  rlang:"https://github-readme-stats.vercel.app/api/top-langs/?username=manojmogal007&theme=react&hide_border=false&include_all_commits=true&count_private=false&layout=compact"
+}
+// const commit={theme:'https://github-readme-stats.vercel.app/api?username=manojmogal007&theme=&hide_border=false&include_all_commits=true&count_private=false':'https://github-readme-stats.vercel.app/api?username=manojmogal007&theme=&hide_border=false&include_all_commits=true&count_private=false'}
+
   return (
     <div className="App" >
        {/* <Component/> */}
@@ -41,7 +55,8 @@ console.log(skillref)
       <div className='home' ref={homeref}>
           <div className='developer'>
                <div className='sub_dev'>
-                  <h3 >Hello! I'm Manoj Mogal,I'm a</h3>
+                  <h3 >Hi,</h3>
+                  <h3 >I'm Manoj Mogal</h3>
                   <h1>Full Stack Web Developer</h1>
                   <a href={resume} download='resume'>
                     <button className='resume_btn' >Resume</button>
@@ -169,6 +184,15 @@ console.log(skillref)
           <Calender/>
       </div>
       </div>
+      <div className={theme?'_stats':'stats'}>
+        <div className='state1'>
+            <img src={theme?react.rcommit:html.hcommit}/>
+            <img src={theme?react.rcont:html.hcont}/>
+        </div>
+        <div className='state2'>
+            <img src={theme?react.rlang:html.hlang}/>
+        </div>
+      </div>
       {/* ------------------------------------------------------------------------ */}
       <div ref={projectref} className={theme?'_project':'project'} >
         <h1>My projects</h1>
@@ -229,7 +253,7 @@ console.log(skillref)
       <img src='https://github-readme-stats.vercel.app/api?username=manojmogal007'></img>
       </div> */}
       
-      <div className={theme?'_contact':'contact'}>
+      <div className={theme?'_contact':'contact'} ref={contactref}>
           <h1>Contact Me</h1>
         <div className={theme?'_subcontact':'subcontact'}>
         <div data-aos="fade-right">
