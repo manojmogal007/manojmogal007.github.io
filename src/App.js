@@ -1,6 +1,5 @@
 
 import './App.css';
-import { Box,Image } from '@chakra-ui/react';
 import { useContext, useEffect, useState } from 'react';
 import { Navcontext } from './Context/Navcontext';
 import { Typewriter } from 'react-simple-typewriter'
@@ -10,10 +9,10 @@ import Aos from 'aos';
 import jefit from './picture/jefit.png'
 import cronometer from './picture/cronometer.png'
 import kfc from './picture/kfc.png'
-import profile from './picture/profile.jpg'
-import Component  from './Components/Crousel';
-import resume from './Resume/manoj_resume.pdf'
-import {SiJavascript,SiHtml5,SiReact,SiNextdotjs,SiTypescript,SiExpress,SiChakraui,SiMongodb,SiNetlify} from 'react-icons/si'
+import awake from './picture/awake.png'
+import profile from './picture/profile1.jpg'
+import resume from './Resume/Manoj_Mogal_resume.pdf'
+import {SiJavascript,SiHtml5,SiReact,SiNextdotjs,SiReplit,SiTypescript,SiExpress,SiChakraui,SiMongodb,SiNetlify,SiVisualstudio} from 'react-icons/si'
 import {FaNodeJs,FaLinkedin} from 'react-icons/fa'
 import {AiFillGithub} from 'react-icons/ai'
 import {DiCss3} from 'react-icons/di'
@@ -22,8 +21,8 @@ import {BsFillTelephoneFill} from 'react-icons/bs'
 import EmailDrawer from './Components/Drawer';
 import Email from './Components/Email';
 import Calender from './Components/Calender';
+import { ImNpm } from "react-icons/im";
 function App() {
-// document.title("Manoj")
 
   useEffect(()=>{
     Aos.init({duration:1000})
@@ -43,11 +42,9 @@ const react={
   rcont:"https://github-readme-streak-stats.herokuapp.com/?user=manojmogal007&theme=react&hide_border=false",
   rlang:"https://github-readme-stats.vercel.app/api/top-langs/?username=manojmogal007&theme=react&hide_border=false&include_all_commits=true&count_private=false&layout=compact"
 }
-// const commit={theme:'https://github-readme-stats.vercel.app/api?username=manojmogal007&theme=&hide_border=false&include_all_commits=true&count_private=false':'https://github-readme-stats.vercel.app/api?username=manojmogal007&theme=&hide_border=false&include_all_commits=true&count_private=false'}
 
   return (
     <div className="App" >
-       {/* <Component/> */}
       <div >
         <Nav/>
       </div> 
@@ -58,7 +55,7 @@ const react={
                   <h3 >Hi,</h3>
                   <h3 >I'm Manoj Mogal</h3>
                   <h1>Full Stack Web Developer</h1>
-                  <a href={resume} download='resume'>
+                  <a href={resume} download='Manoj_Mogal_resume'>
                     <button className='resume_btn' >Resume</button>
                   </a>
                </div>
@@ -75,7 +72,7 @@ const react={
                 <div className='typewriter'>
                  {/* <p>I'm Manoj Mogal I'm a </p><br/> */}
                  <p className='type'>I'm Manoj Mogal I'm a <span><Typewriter
-                      words={['Coder', 'MERN developer', 'Self believer']}
+                      words={['Coder', 'MERN developer', 'Self believer','Problem Solver']}
                       loop={false}
                       cursor
                       cursorStyle='_'
@@ -99,7 +96,7 @@ const react={
       </div> */}
       {/* ----------------------------------------------------------------- */}
       <div ref={skillref} className={theme?'_skills':'skills'}>
-        <h1>Skills</h1>
+        <h1>Technical Skills</h1>
         <div className={theme?'_techstack':'techstack'}>
         <div data-aos="zoom-in-up">
           <div className={theme?'_icon_div':'icon_div'}>
@@ -155,33 +152,62 @@ const react={
               <h4>MongoDB</h4>
           </div>
           </div>
-          <div data-aos="zoom-in-up">
-          <div className={theme?'_icon_div':'icon_div'}>
-              <SiChakraui className={theme?'_chakra':'chakra'} />
-              <h4>Chakra-UI</h4>
-          </div>
-          </div>
-          <div data-aos="zoom-in-up">
-          <div className={theme?'_icon_div':'icon_div'}>
-              <AiFillGithub className={theme?'_github':'github'} />
-              <h4>Github</h4>
-          </div>
-          </div>
-          <div data-aos="zoom-in-up">
-          <div className={theme?'_icon_div':'icon_div'}>
-              <SiNetlify className={theme?'_netlify':'netlify'} />
-              <h4>Netlify</h4>
-          </div>
-          </div>
+         
+          
+          
         </div>
       </div>
+      <div className={theme?'_tools':'tools'}>
+      <h1>Tools</h1>
+        <div className={theme?'_cartdiv':'cartdiv'}>
+              <div data-aos="zoom-in-up">
+                <div className={theme?'_icon_div':'icon_div'}>
+                    <AiFillGithub className={theme?'_github':'github'} />
+                    <h4>Github</h4>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up">
+                <div className={theme?'_icon_div':'icon_div'}>
+                    <SiVisualstudio className={theme?'_vscode':'vscode'} />
+                    <h4>VS code</h4>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up">
+                <div className={theme?'_icon_div':'icon_div'}>
+                    <SiReplit className={theme?'_replit':'replit'} />
+                    <h4>Replit</h4>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up">
+                <div className={theme?'_icon_div':'icon_div'}>
+                    <ImNpm className={theme?'_npm':'npm'} />
+                    <h4>NPM</h4>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up">
+                <div className={theme?'_icon_div':'icon_div'}>
+                    <SiNetlify className={theme?'_netlify':'netlify'} />
+                    <h4>Netlify</h4>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up">
+                <div className={theme?'_icon_div':'icon_div'}>
+                    <SiChakraui className={theme?'_chakra':'chakra'} />
+                    <h4>Chakra-UI</h4>
+                </div>
+              </div>
+        </div>
+
+      </div>
         {/* -------------------------------------------------------------------------- */}
+        <div className={theme?'_calendar':'calendar'}>
         <div data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1500">
         <div className={theme?'_calendar':'calendar'}>
           <h1>My Coding Journey</h1>
           <Calender/>
+      </div>
       </div>
       </div>
       <div className={theme?'_stats':'stats'}>
@@ -205,7 +231,7 @@ const react={
              <p>Jefit is the ultimate fitness, bodybuilding and workout application for all individuals looking for that extra step and motivation to get back into the gym</p>
              <p>Tech stack : JS | HTML | React | Chackra-UI</p>  
              <div className={theme?'_btn':'btn'}>
-              <button><a href='https://github.com/manojmogal007/fallacious-company-8720'>Github</a></button>
+              <button><a href='https://github.com/manojmogal007/Jefit_clone'>Github</a></button>
               <button><a href='https://preeminent-piroshki-a94ec2.netlify.app/'>Go live</a></button>
               </div>  
           </div>
@@ -214,7 +240,7 @@ const react={
         {/* -------------------------------------------------------- */}
         <div  data-aos="zoom-in-up">
           <div className={theme?'_pro_1':'pro_1'}>
-          <img src={cronometer} alt='jefit'/>
+          <img src={cronometer} alt='cronometer'/>
           <div className={theme?'_project_details':'project_details'}>
              <h4>Cronometer.com</h4>
              <p>Cronometer encourages you to not just count your calories but to focus on your nutrition as a whole. Develop healthy habits Count your calories.</p>
@@ -229,14 +255,30 @@ const react={
         {/* --------------------------------------------------------- */}
         <div  data-aos="zoom-in-up">
           <div className={theme?'_pro_1':'pro_1'}>
-          <img src={kfc} alt='jefit'/>
+          <img src={kfc} alt='kfc'/>
           <div className='project_details'>
              <h4>KFC.com</h4>
              <p>KFC is an American fast food restaurant chain that specializes in fried chicken.It is the world's second-largest restaurant chain after McDonald's.</p>
              <p>Tech stack : JS | HTML | React | Chackra-UI</p>  
              <div className={theme?'_btn':'btn'}>
-              <button><a href='https://github.com/manojmogal007/dusty-record-6347'>Github</a></button>
+              <button><a href='https://github.com/manojmogal007/KFC_clone'>Github</a></button>
               <button><a href='https://my-app-gilt-beta.vercel.app/'>Go live</a></button>
+              </div>  
+          </div>
+        </div>
+        </div>
+        {/* --------------------------------------------------------- */}
+        {/* --------------------------------------------------------- */}
+        <div  data-aos="zoom-in-up">
+          <div className={theme?'_pro_1':'pro_1'}>
+          <img src={awake} alt='awake'/>
+          <div className='project_details'>
+             <h4>Lifestylestore.com</h4>
+             <p>A lifestyle store is a retail store selling a wide variety of product categories under a single brand. It is designed to associate a brand with one or another aspirational lifestyle.</p>
+             <p>Tech stack : JS | HTML | React | Chackra-UI</p>  
+             <div className={theme?'_btn':'btn'}>
+              <button><a href='https://github.com/Sagar1079/ultra-field-1415'>Github</a></button>
+              <button><a href='https://awake-fashion.netlify.app/'>Go live</a></button>
               </div>  
           </div>
         </div>

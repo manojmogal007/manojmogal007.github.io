@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useContext } from 'react'
 import { Navcontext } from '../Context/Navcontext'
-import resume from '../Resume/manoj_resume.pdf'
+import resume from '../Resume/Manoj_Mogal_resume.pdf'
 import { FaRegLightbulb,FaLightbulb } from "react-icons/fa";
 import {MdOutlineDarkMode,MdOutlineLightMode } from "react-icons/md";
 // import { Navcontext } from '../Context/Navcontext'
@@ -34,7 +34,7 @@ const Nav = () => {
 <li onClick={gotoskill} ><button >Skills</button></li>
 <li onClick={gotoproject}><button >Project</button></li>
 <li onClick={gotocontact}><button >Contact</button></li>
-<a href={resume} download='resume'><li ><button >Resume</button></li></a>
+<a href={resume} download='Manoj_Mogal_resume'><li ><button >Resume</button></li></a>
 <li><button onClick={()=>settheme(!theme)}>{theme? <MdOutlineLightMode className='light'/>:<MdOutlineDarkMode className='dark' />}</button></li>
 </div>
 </ul>

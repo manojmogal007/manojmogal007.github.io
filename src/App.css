@@ -99,12 +99,12 @@
    background: linear-gradient(258deg, rgb(221, 221, 221) 11.34%, rgb(110, 136, 161) 90.45%);
   padding-top: 20px; 
 }
-.calendar>h1,.about_me>h1,.project>h1,.skills>h1,.contact>h1{
+.tools>h1,.calendar>h1,.about_me>h1,.project>h1,.skills>h1,.contact>h1{
   font-size: 37px;
   font-weight: 500;
   padding-top: 50px;
 }
-._calendar>h1,._about_me>h1,._project>h1,._skills>h1,._contact>h1{
+._tools>h1,._calendar>h1,._about_me>h1,._project>h1,._skills>h1,._contact>h1{
   font-size: 37px;
   font-weight: 500;
   padding-top: 50px;
@@ -112,7 +112,6 @@
 
 
 .home_next{
-  /* background-color: rgb(243, 237, 237); */
   display: flex;
  height: 700px;
 }
@@ -123,19 +122,15 @@
   justify-content: center;
  position: relative;
  top: 20%;
- /* border: 1px solid red; */
 }
 .profile_pic>img{
   border-radius: 20px;
-  /* width: 40%; */
 }
 
 .description{
   width: 50%;
-  /* border: 1px solid black; */
   height: 40%;
   margin: auto;
-    /* border: 1px solid teal; */
 
 }
 .typewriter{
@@ -149,12 +144,7 @@
   margin-right: 5px;
   display: flex;
 }
-/* .type{
- color: black;
- border: 1px solid red;
-} */
 .summary{
-  /* border: 1px solid red; */
   padding-right: 5%;
   text-align: left;
   margin-top: 20px;
@@ -193,7 +183,6 @@
 }
 
 .sub_pro>div>div{
-  /* border: 1px solid black; */
   padding: 40px 0px;
   background-color: whitesmoke;
   border-radius: 13px;
@@ -202,7 +191,6 @@
 }
 
 ._sub_pro>div>div{
-  /* border: 1px solid black; */
   padding: 40px 0px;
   background-color: #293243;
   border-radius: 13px;
@@ -212,7 +200,6 @@
 .pro_1:hover,._pro_1:hover{
   transform: scale(1.06);
   transition: 1s ease;
-  /* color: white; */
   background-color: rgb(28, 139, 156);
 }
 .pro_1:hover button{
@@ -229,7 +216,6 @@
 .project_details,._project_details{
   width: 85%;
   margin: auto;
-  /* text-align: left; */
 }
 .project_details>p,._project_details>p{
   margin-top: 12px;
@@ -271,7 +257,7 @@
 /* .skills{
   padding-top: 50px;
 } */
-.techstack{
+.techstack,.cartdiv{
   width: 65%;
   margin: auto;
   display: grid;
@@ -280,7 +266,7 @@
   padding-top: 50px;
   padding-bottom: 60px;
 }
-._techstack{
+._techstack,._cartdiv{
   width: 65%;
   margin: auto;
   display: grid;
@@ -300,10 +286,10 @@
 .skills,.contact{
   background-color: rgb(254, 248, 248);
 }
-._skills,._contact{
+._skills,._contact,._tools{
   background-color: #282c34;
 }
-._skills>h1,._contact>h1{
+._skills>h1,._contact>h1,._tools>h1{
   color: white;
 }
 ._icon_div{
@@ -327,13 +313,13 @@
   margin-top: 15px;
   color: white;
 }
-.js,.html,.css,.mongo,.node,.typescript,.next,.chakra,.github,.netlify,.react,.express{
+.npm,.replit,.vscode,.js,.html,.css,.mongo,.node,.typescript,.next,.chakra,.github,.netlify,.react,.express{
   color:#3d3e3e;
   height: 70px;
   width: 70px;
   margin: auto;
 }
-._js,._html,._css,._mongo,._node,._typescript,._next,._chakra,._github,._netlify,._react,._express{
+._npm,._replit,._vscode,._js,._html,._css,._mongo,._node,._typescript,._next,._chakra,._github,._netlify,._react,._express{
   color:white;
   height: 70px;
   width: 70px;
@@ -357,7 +343,13 @@
 .mongo:hover,._mongo:hover{
   color: #228b22  ;
 }
-.netlify:hover,.chakra:hover,._netlify:hover,._chakra:hover{
+.replit:hover,._replit:hover{
+  color: grey  ;
+}
+.npm:hover,._npm:hover{
+  color: red  ;
+}
+.vscode:hover,._vscode:hover,.netlify:hover,.chakra:hover,._netlify:hover,._chakra:hover{
   color: #00ced1  ;
 }
 
@@ -460,7 +452,7 @@ color: white;
 /* .copy{
   color: black;
 } */
-.stats{
+.stats,.tools{
   background-color:rgb(254, 248, 248) ;
 }
 ._stats{
@@ -523,7 +515,7 @@ color: white;
     width: 95%;
     margin: auto;
   }
-  .techstack,._techstack{
+  .techstack,._techstack,.cartdiv,._cartdiv{
     width: 75%;
     margin: auto;
     display: grid;
@@ -671,7 +663,7 @@ color: white;
     height: 460px;
     /* width: 90%; */
   }
-  .techstack,._techstack{
+  .techstack,._techstack,.cartdiv,._cartdiv{
     width: 70%;
     margin: auto;
     display: grid;
