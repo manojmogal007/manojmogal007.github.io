@@ -91,17 +91,14 @@
         }
         
         .menu li:hover,._menu li:hover {
-        
-        /* background-color: #4c9e9e; */
-        
-        /* border-radius: 5px; */
         color: whitesmoke;
         transition: 0.7s ease;
-        /* transform:scaleX(1.2); */
         transform:scale(1.15);
         
         }
-        
+        li{
+            font-size: 21px;
+        }
         .menu li,._menu li {
         
         padding: 5px 14px;
@@ -201,14 +198,15 @@
                   
                     padding-left: 60px;
                     padding-right: 60px;
-                    
+                    z-index: 999;
+                    /* background: rgba(100, 100, 100, 0.6); */
                 }
         
                 ._navbar {
                   
                     padding-left: 60px;
                     padding-right: 60px;
-                   
+                    z-index: 999;
                   }
             
             .menu {
@@ -226,7 +224,9 @@
             text-align: center;
             
             padding: 16px 0;
-
+            background: rgba(100, 100, 100, 0.9);
+            margin-top: 32px;
+            
             
             }
             ._menu {
@@ -298,7 +298,6 @@
             left: 50%;
             
             top: 30px;
-            
             transform: translateX(35%);
             
             }
@@ -308,11 +307,13 @@
             background-color: #0B1727;
             
             }
+           
             
             }
 
 
             @media (max-width: 560px){
+                
                 .logo {
         
                     font-size: 20px;
@@ -323,19 +324,26 @@
                   
                         padding-left: 7px;
                         padding-right: 7px;
-                        
+                        z-index: 999;
                     }
             
                     ._navbar {
                       
                         padding-left: 7px;
                         padding-right: 7px;
-                       
+                        z-index: 999;
                       }
-                      .menu,._menu {
+                      .menu {
         
                         display: none;
                         font-size: 14px;
-                        
+                        background: rgba(100, 100, 100, 0.9);
+                        margin-top: 29px;
                         }
+                      ._menu {
+                        margin-top: 0px;
+                        display: none;
+                        font-size: 14px;
+                        }
+                      
             }

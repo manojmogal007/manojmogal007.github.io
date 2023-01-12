@@ -116,7 +116,7 @@
  height: 700px;
 }
 .profile_pic{
-  width: 50%;
+  width: 45%;
   height: 55%;
   display: flex;
   justify-content: center;
@@ -128,7 +128,7 @@
 }
 
 .description{
-  width: 50%;
+  width: 55%;
   height: 40%;
   margin: auto;
 
@@ -145,9 +145,11 @@
   display: flex;
 }
 .summary{
+  width: 80%;
   padding-right: 5%;
   text-align: left;
   margin-top: 20px;
+  font-size: 18px;
 }
 .type>span{
   margin-left: 6px;
@@ -177,7 +179,7 @@
   width: 90%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
   gap: 36px;
   margin-top: 40px;
 }
@@ -429,6 +431,7 @@
 }
 .made{
   background-color: rgb(254, 248, 248);
+  padding: 20px;
 }
 .made h4{
   font-weight: 600;
@@ -441,6 +444,7 @@
 ._made{
 background-color:#282c34 ;
 color: white;
+padding: 20px;
 }
 .calendar{
   background-color:rgb(254, 248, 248) ;
@@ -505,11 +509,17 @@ color: white;
     width: 90%;
     height: 110%;
     margin: auto;
-    margin-top: -80px;
+    margin-top: 0px;
   }
   .typewriter{
     font-size: 20px;
     
+  }
+  .summary{
+    width: 100%;
+    font-size: 16px;
+    margin: auto;
+    /* border: 1px solid red; */
   }
   .crousel{
     width: 95%;
@@ -584,12 +594,15 @@ color: white;
 .state2>img{
   width: 40%;
 }
+
 }
 @media (max-width: 560px) {
   .home{
-    height: 550px;
+    height: 450px;
   }
   .sub_dev{
+    position: relative;
+    top: 50%;
     margin-left: 15px;
   }
   .sub_dev>h3{
@@ -616,7 +629,7 @@ color: white;
   }
   .profile_pic{
     width: 100%;
-    height: 240px;
+    height: 200px;
     /* height: 50%; */
    top: 14%;
   }
@@ -715,6 +728,18 @@ color: white;
   .state2>img{
     width: 70%;
   }
+  .summary{
+    font-size: 13px;
+    text-align: center;
+    /* border: 1px solid red; */
+    margin: auto;
+  }
+  .typewriter{
+    width: 87%;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid red; */
+  }
 }
 /* <-------------------only for profile picture section ----------------------> */
 @media (max-width: none) {
@@ -746,14 +771,14 @@ color: white;
 @media (max-width: 400px) {
   /* 300 */
   .home_next{
-    height: 510px;
+    height: 470px;
     display: grid;
     grid-template-columns:100%;
     /* grid-template-rows: 300px 300px; */
   }
   .profile_pic{
     width: 100%;
-    height: 180px;
+    height: 150px;
     /* height: 50%; */
    top: 14%;
   }
@@ -761,10 +786,16 @@ color: white;
     width: 95%;
     height: 65%;
     margin: auto;
-    margin-top: -40px;
+    margin-top: -70px;
   }
   .typewriter{
     font-size: 11px;
     
+  }
+  .summary{
+    font-size: 11px;
+    text-align: center;
+    /* border: 1px solid red; */
+    margin: auto;
   }
 }
