@@ -430,19 +430,22 @@
   transition: 0.5s ease;
 }
 .made{
-  background-color: rgb(254, 248, 248);
+  background-color: grey;
   padding: 20px;
+  color: white;
 }
 .made h4{
   font-weight: 600;
   margin: auto;
+  font-size: 18px;
 }
 ._made h4{
   font-weight: 600;
   margin: auto;
+  font-size: 18px;
 }
 ._made{
-background-color:#282c34 ;
+background-color:#293243 ;
 color: white;
 padding: 20px;
 }

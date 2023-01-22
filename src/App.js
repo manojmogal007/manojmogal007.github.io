@@ -231,8 +231,8 @@ const react={
              <p>Jefit is the ultimate fitness, bodybuilding and workout application for all individuals looking for that extra step and motivation to get back into the gym</p>
              <p>Tech stack : JS | HTML | React | Chackra-UI</p>  
              <div className={theme?'_btn':'btn'}>
-              <button><a href='https://github.com/manojmogal007/Jefit_clone'>Github</a></button>
-              <button><a href='https://preeminent-piroshki-a94ec2.netlify.app/'>Go live</a></button>
+              <button><a href='https://github.com/manojmogal007/Jefit_clone' target='_blank'>Github</a></button>
+              <button><a href='https://preeminent-piroshki-a94ec2.netlify.app/' target='_blank'>Go live</a></button>
               </div>  
           </div>
         </div>
@@ -246,8 +246,8 @@ const react={
              <p>Cronometer encourages you to not just count your calories but to focus on your nutrition as a whole. Develop healthy habits Count your calories.</p>
              <p>Tech stack : JS | HTML | CSS</p>  
              <div className={theme?'_btn':'btn'}>
-              <button><a href='https://github.com/mazidul36i/Cronometer_clone'>Github</a></button>
-              <button><a href='https://cronometerclone.netlify.app/'>Go live</a></button>
+              <button><a href='https://github.com/mazidul36i/Cronometer_clone' target='_blank'>Github</a></button>
+              <button><a href='https://cronometerclone.netlify.app/' target='_blank'>Go live</a></button>
               </div>   
           </div>
         </div>
@@ -261,8 +261,8 @@ const react={
              <p>KFC is an American fast food restaurant chain that specializes in fried chicken.It is the world's second-largest restaurant chain after McDonald's.</p>
              <p>Tech stack : JS | HTML | React | Chackra-UI</p>  
              <div className={theme?'_btn':'btn'}>
-              <button><a href='https://github.com/manojmogal007/KFC_clone'>Github</a></button>
-              <button><a href='https://my-app-gilt-beta.vercel.app/'>Go live</a></button>
+              <button><a href='https://github.com/manojmogal007/KFC_clone' target='_blank'>Github</a></button>
+              <button><a href='https://my-app-gilt-beta.vercel.app/' target='_blank'>Go live</a></button>
               </div>  
           </div>
         </div>
@@ -277,8 +277,8 @@ const react={
              <p>A lifestyle store is a retail store selling a wide variety of product categories under a single brand. It is designed to associate a brand with one or another aspirational lifestyle.</p>
              <p>Tech stack : JS | HTML | React | Chackra-UI</p>  
              <div className={theme?'_btn':'btn'}>
-              <button><a href='https://github.com/Sagar1079/ultra-field-1415'>Github</a></button>
-              <button><a href='https://awake-fashion.netlify.app/'>Go live</a></button>
+              <button><a href='https://github.com/Sagar1079/ultra-field-1415' target='_blank'>Github</a></button>
+              <button><a href='https://awake-fashion.netlify.app/' target='_blank'>Go live</a></button>
               </div>  
           </div>
         </div>
@@ -304,20 +304,20 @@ const react={
                 <h3>Get in Touch</h3>
                 <div className={theme?'_touch_div':'touch_div'}>
                   <div className='touch'>
-                      <a href='mailto:manojpatil7076@gmail.com'><MdOutlineEmail className='temail'/></a>
-                      <a href='mailto:manojpatil7076@gmail.com'><p>manojpatil7076@gmail.com</p></a>
+                      <a href='mailto:manojpatil7076@gmail.com' target='_blank'><MdOutlineEmail className='temail'/></a>
+                      <a href='mailto:manojpatil7076@gmail.com' target='_blank'><p>manojpatil7076@gmail.com</p></a>
                   </div>
                   <div className='touch'>
-                  <a href='https://www.linkedin.com/in/manoj-mogal-8830341b2/'><FaLinkedin className='tlinkedin'/></a>
-                  <a href='https://www.linkedin.com/in/manoj-mogal-8830341b2/'><p>Manoj Mogal</p></a>
+                  <a href='https://www.linkedin.com/in/manoj-mogal-8830341b2/' target='_blank'><FaLinkedin className='tlinkedin'/></a>
+                  <a href='https://www.linkedin.com/in/manoj-mogal-8830341b2/' target='_blank'><p>Manoj Mogal</p></a>
                   </div>
                   <div className='touch'>
-                  <a href='https://github.com/manojmogal007'><AiFillGithub className='tgithub'/></a>
-                  <a href='https://github.com/manojmogal007'><p>manojmogal007</p></a>
+                  <a href='https://github.com/manojmogal007' target='_blank'><AiFillGithub className='tgithub'/></a>
+                  <a href='https://github.com/manojmogal007' target='_blank'><p>manojmogal007</p></a>
                   </div>
                   <div className='touch'>
-                  <a href='tel:+917219547076'><BsFillTelephoneFill className='tphone'/></a>
-                  <a href='tel:+917219547076'><p>7219547076</p></a>
+                  <a href='tel:+917219547076' target='_blank'><BsFillTelephoneFill className='tphone'/></a>
+                  <a href='tel:+917219547076' target='_blank'><p>7219547076</p></a>
                   </div>
                 </div>
           </div>
