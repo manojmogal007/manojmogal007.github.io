@@ -34,7 +34,7 @@ const Nav = () => {
 <li onClick={gotoskill} ><button >Skills</button></li>
 <li onClick={gotoproject}><button >Project</button></li>
 <li onClick={gotocontact}><button >Contact</button></li>
-<a href={resume} download='Manoj_Mogal_resume'><li ><button >Resume</button></li></a>
+<a href={resume} download='Manoj_Mogal_resume'><li ><button onClick={()=>window.open('https://drive.google.com/file/d/1lc9TtM077mUGi0uSnV7u60tNXNxYhqM9/view?usp=share_link','_blank')} >Resume</button></li></a>
 <li><button onClick={()=>settheme(!theme)}>{theme? <MdOutlineLightMode className='light'/>:<MdOutlineDarkMode className='dark' />}</button></li>
 </div>
 </ul>

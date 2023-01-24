@@ -55,8 +55,8 @@ const react={
                   <h3 >Hi,</h3>
                   <h3 >I'm Manoj Mogal</h3>
                   <h1>Full Stack Web Developer</h1>
-                  <a href={resume} download='Manoj_Mogal_resume'>
-                    <button className='resume_btn' >Resume</button>
+                  <a  href={resume} download='Manoj_Mogal_resume'>
+                    <button onClick={()=>window.open('https://drive.google.com/file/d/1lc9TtM077mUGi0uSnV7u60tNXNxYhqM9/view?usp=share_link','_blank')} className='resume_btn' >Resume</button>
                   </a>
                </div>
           </div>
@@ -277,7 +277,7 @@ const react={
              <p>A lifestyle store is a retail store selling a wide variety of product categories under a single brand. It is designed to associate a brand with one or another aspirational lifestyle.</p>
              <p>Tech stack : JS | HTML | React | Chackra-UI</p>  
              <div className={theme?'_btn':'btn'}>
-              <button><a href='https://github.com/Sagar1079/ultra-field-1415' target='_blank'>Github</a></button>
+              <button><a href='https://github.com/Sagar1079/awake_fashion_project' target='_blank'>Github</a></button>
               <button><a href='https://awake-fashion.netlify.app/' target='_blank'>Go live</a></button>
               </div>  
           </div>
