@@ -46,7 +46,7 @@
   background-attachment:'fixed';
   background-repeat:'no-repeat';
   background-size:'auto';
-  background-image: url("https://wallpaperaccess.com/full/5651990.jpg") ;
+  /* background-image: url("https://wallpaperaccess.com/full/5651990.jpg") ; */
   height: 800px;
   background-attachment: fixed;
 }
@@ -71,6 +71,20 @@
   font-weight: bold;
   color: white;
 }
+@keyframes pulse_01 {
+    0% {
+        transform: scale(0.94);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+    }
+    100% {
+        transform: scale(0.94);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
 .resume_btn{
   background-color: none;
   width: 150px;
@@ -82,10 +96,14 @@
   color: white;
   
 }
+.resume_btn{
+  animation: pulse_01 2s ease infinite;
+}
 .resume_btn:hover{
  background-color: white;
  color: black;
  border: teal;
+ animation: none;
 }
 .about_me{
    /* background: linear-gradient(241deg, rgb(251, 251, 255) 7.24%, rgb(215, 223, 252) 85.60%); */

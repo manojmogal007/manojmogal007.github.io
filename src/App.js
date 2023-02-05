@@ -10,6 +10,7 @@ import jefit from './picture/jefit.png'
 import cronometer from './picture/cronometer.png'
 import kfc from './picture/kfc.png'
 import awake from './picture/awake.png'
+import meesho from './picture/meesho.png'
 import profile from './picture/profile1.jpg'
 import resume from './Resume/Manoj_Mogal_resume.pdf'
 import {SiJavascript,SiHtml5,SiReact,SiNextdotjs,SiReplit,SiTypescript,SiExpress,SiChakraui,SiMongodb,SiNetlify,SiVisualstudio} from 'react-icons/si'
@@ -22,10 +23,28 @@ import EmailDrawer from './Components/Drawer';
 import Email from './Components/Email';
 import Calender from './Components/Calender';
 import { ImNpm } from "react-icons/im";
+import first from './picture/first.webp'
+import second from './picture/second.jpg'
 function App() {
+const [background,setbackground]=useState(second)
+// let a=2;
+//   const recursion=()=>{
+//     setInterval(()=>{
+      
+//       if(a===2){
+//         setbackground(second)
+//         a=1
+//       }else{
+//        setbackground(first)
+//        a=2
+//       }
+//     },10000)
+    
+//   }
 
   useEffect(()=>{
     Aos.init({duration:1000})
+    // recursion()
   },[])
 
   
@@ -49,7 +68,7 @@ const react={
         <Nav/>
       </div> 
      
-      <div className='home' ref={homeref}>
+      <div className='home' ref={homeref} style={{backgroundImage:`url(${background})`}} >
           <div className='developer'>
                <div className='sub_dev'>
                   <h3 >Hi,</h3>
@@ -84,7 +103,7 @@ const react={
                   </p>
                   </div>
                   <div className='summary'>
-                    <p >MERN stack web developer able to build web application from the ground up-from concept, layot and programming to UX and SEO. Skilled in front end technologies such as HTML, CSS, Javascript, React.JS and backend technologies such as Node.JS, Express.JS, MongoDB. I'm looking for a challenging opportunity that will enable me to use my skills and my abilities to achieve a challenging goal.</p>
+                    <p >MERN stack web developer able to build web application from the ground up-from concept, layout and programming to UI and SEO. Skilled in front end technologies such as HTML, CSS, Javascript, React.JS and backend technologies such as Node.JS, Express.JS, MongoDB. I'm looking for a challenging opportunity that will enable me to use my skills and my abilities to achieve a challenging goal.</p>
                   </div>
           </div>
      </div>
@@ -223,6 +242,53 @@ const react={
       <div ref={projectref} className={theme?'_project':'project'} >
         <h1>My projects</h1>
         <div className={theme?'_sub_pro':'sub_pro'}>
+           {/* -------------------------------------------------------- */}
+        <div  data-aos="zoom-in-up">
+          <div className={theme?'_pro_1':'pro_1'}>
+          <img src={meesho} alt='meesho'/>
+          <div className={theme?'_project_details':'project_details'}>
+             <h4>Meesho.com</h4>
+             <p>Meesho is the best place to find fashionable and affordable western wear for women. With a constantly updating inventory of casual, formal, and partywear dresses, etc.</p>
+             <p>Tech stack : JS | HTML | React | Chackra-UI | Node js | Express js | MongoDB</p>  
+             <div className={theme?'_btn':'btn'}>
+              <button><a href='https://github.com/crusher8010/damaged-muscle-4612' target='_blank'>Github</a></button>
+              <button><a href='https://magenta-eclair-cf1ece.netlify.app/' target='_blank'>Go live</a></button>
+              </div>   
+          </div>
+        </div>
+        </div>
+          {/* ------------------------------------------------------------------------ */}
+          <div  data-aos="zoom-in-up">
+          <div className={theme?'_pro_1':'pro_1'}>
+          <img src={awake} alt='awake'/>
+          <div className='project_details'>
+             <h4>Lifestylestore.com</h4>
+             <p>A lifestyle store is a retail store selling a wide variety of product categories under a single brand. It is designed to associate a brand with one or another aspirational lifestyle.</p>
+             <p>Tech stack : JS | HTML | React | Chackra-UI | Node js | Express js | MongoDB</p>  
+             <div className={theme?'_btn':'btn'}>
+              <button><a href='https://github.com/Sagar1079/awake_fashion_project' target='_blank'>Github</a></button>
+              <button><a href='https://awake-fashion.netlify.app/' target='_blank'>Go live</a></button>
+              </div>  
+          </div>
+        </div>
+        </div>
+         {/* -------------------------------------------------------- */}
+         <div  data-aos="zoom-in-up">
+          <div className={theme?'_pro_1':'pro_1'}>
+          <img src={cronometer} alt='cronometer'/>
+          <div className={theme?'_project_details':'project_details'}>
+             <h4>Cronometer.com</h4>
+             <p>Cronometer encourages you to not just count your calories but to focus on your nutrition as a whole. Develop healthy habits Count your calories.</p>
+             <p>Tech stack : JS | HTML | CSS</p>  
+             <div className={theme?'_btn':'btn'}>
+              <button><a href='https://github.com/mazidul36i/Cronometer_clone' target='_blank'>Github</a></button>
+              <button><a href='https://cronometerclone.netlify.app/' target='_blank'>Go live</a></button>
+              </div>   
+          </div>
+        </div>
+        </div>
+        {/* --------------------------------------------------------- */}
+          {/* ----------------------------------------------------------------- */}
         <div  data-aos="zoom-in-up">
           <div className={theme?'_pro_1':'pro_1'}>
           <img src={jefit} alt='jefit'/>
@@ -237,21 +303,7 @@ const react={
           </div>
         </div>
         </div>
-        {/* -------------------------------------------------------- */}
-        <div  data-aos="zoom-in-up">
-          <div className={theme?'_pro_1':'pro_1'}>
-          <img src={cronometer} alt='cronometer'/>
-          <div className={theme?'_project_details':'project_details'}>
-             <h4>Cronometer.com</h4>
-             <p>Cronometer encourages you to not just count your calories but to focus on your nutrition as a whole. Develop healthy habits Count your calories.</p>
-             <p>Tech stack : JS | HTML | CSS</p>  
-             <div className={theme?'_btn':'btn'}>
-              <button><a href='https://github.com/mazidul36i/Cronometer_clone' target='_blank'>Github</a></button>
-              <button><a href='https://cronometerclone.netlify.app/' target='_blank'>Go live</a></button>
-              </div>   
-          </div>
-        </div>
-        </div>
+       
         {/* --------------------------------------------------------- */}
         <div  data-aos="zoom-in-up">
           <div className={theme?'_pro_1':'pro_1'}>
@@ -269,21 +321,7 @@ const react={
         </div>
         {/* --------------------------------------------------------- */}
         {/* --------------------------------------------------------- */}
-        <div  data-aos="zoom-in-up">
-          <div className={theme?'_pro_1':'pro_1'}>
-          <img src={awake} alt='awake'/>
-          <div className='project_details'>
-             <h4>Lifestylestore.com</h4>
-             <p>A lifestyle store is a retail store selling a wide variety of product categories under a single brand. It is designed to associate a brand with one or another aspirational lifestyle.</p>
-             <p>Tech stack : JS | HTML | React | Chackra-UI</p>  
-             <div className={theme?'_btn':'btn'}>
-              <button><a href='https://github.com/Sagar1079/awake_fashion_project' target='_blank'>Github</a></button>
-              <button><a href='https://awake-fashion.netlify.app/' target='_blank'>Go live</a></button>
-              </div>  
-          </div>
-        </div>
-        </div>
-        {/* --------------------------------------------------------- */}
+        
         </div>
       </div>
       {/* <Box className='box' id='box' h={600} border='1px solid red'>
