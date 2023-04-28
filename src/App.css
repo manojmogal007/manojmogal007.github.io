@@ -676,7 +676,11 @@ padding: 20px;
     display: grid;
     grid-template-columns: repeat(1,1fr);
   }
-  
+  .sub_pro>div>div{
+    height: auto;
+    padding: 30px;
+    /* background-color: black; */
+  }
   .pro_1:hover,._pro_1:hover{
     transform: scale(1.05);
   }
@@ -818,5 +822,10 @@ padding: 20px;
     text-align: center;
     /* border: 1px solid red; */
     margin: auto;
+  }
+  .sub_pro>div>div{
+    height: auto;
+    padding: 30px;
+    /* background-color: black; */
   }
 }

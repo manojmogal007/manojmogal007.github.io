@@ -34,13 +34,7 @@ const [background,setbackground]=useState(second)
 //       if(a===2){
 //         setbackground(second)
 //         a=1
-//       }else{
-//        setbackground(first)
-//        a=2
-//       }
-//     },10000)
-    
-//   }
+//     
 
   useEffect(()=>{
     Aos.init({duration:1000})
@@ -90,7 +84,7 @@ const react={
           <div className='description'>
                 <div className='typewriter'>
                  {/* <p>I'm Manoj Mogal I'm a </p><br/> */}
-                 <p className='type'>I'm Manoj Mogal I'm a <span><Typewriter
+                 <p className='type' id='user-detail-name'>I'm Manoj Mogal I'm a <span><Typewriter
                       words={['Coder', 'MERN developer', 'Self believer','Problem Solver']}
                       loop={false}
                       cursor
@@ -103,7 +97,7 @@ const react={
                   </p>
                   </div>
                   <div className='summary'>
-                    <p >MERN stack web developer able to build web application from the ground up-from concept, layout and programming to UI and SEO. Skilled in front end technologies such as HTML, CSS, Javascript, React.JS and backend technologies such as Node.JS, Express.JS, MongoDB. I'm looking for a challenging opportunity that will enable me to use my skills and my abilities to achieve a challenging goal.</p>
+                    <p id='user-detail-intro'>MERN stack web developer able to build web application from the ground up-from concept, layout and programming to UI and SEO. Skilled in front end technologies such as HTML, CSS, Javascript, React.JS and backend technologies such as Node.JS, Express.JS, MongoDB. I'm looking for a challenging opportunity that will enable me to use my skills and my abilities to achieve a challenging goal.</p>
                   </div>
           </div>
      </div>
