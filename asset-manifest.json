@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1456fa87.css",
-    "main.js": "/static/js/main.0620d56e.js",
+    "main.css": "/static/css/main.287e6a0f.css",
+    "main.js": "/static/js/main.3ba170f8.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/awake.png": "/static/media/awake.8e9529a5f51e05257e8d.png",
     "static/media/kfc.png": "/static/media/kfc.2e6e976aa15d430be2ba.png",
@@ -13,12 +13,12 @@
     "static/media/Manoj_Mogal_resume.pdf": "/static/media/Manoj_Mogal_resume.fd2dc6750a0ee993b702.pdf",
     "static/media/second.jpg": "/static/media/second.ff802ca531e9bec4674d.jpg",
     "index.html": "/index.html",
-    "main.1456fa87.css.map": "/static/css/main.1456fa87.css.map",
-    "main.0620d56e.js.map": "/static/js/main.0620d56e.js.map",
+    "main.287e6a0f.css.map": "/static/css/main.287e6a0f.css.map",
+    "main.3ba170f8.js.map": "/static/js/main.3ba170f8.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1456fa87.css",
-    "static/js/main.0620d56e.js"
+    "static/css/main.287e6a0f.css",
+    "static/js/main.3ba170f8.js"
   ]
 }
