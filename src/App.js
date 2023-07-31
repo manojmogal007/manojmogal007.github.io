@@ -272,8 +272,8 @@ window.addEventListener('scroll',setsticky)
              <p className="project-description">Meesho is the best place to find fashionable and affordable western wear for women. With a constantly updating inventory of casual, formal, and partywear dresses, etc.</p>
              <p className="project-tech-stack">Tech stack : JS | HTML | React | Chackra-UI | Node js | Express js | MongoDB</p>  
              <div className={theme?'_btn':'btn'}>
-              <button  className="project-github-link"><a href='https://github.com/crusher8010/damaged-muscle-4612' target='_blank'>Github</a></button>
-              <button className="project-deployed-link"><a href='https://magenta-eclair-cf1ece.netlify.app/' target='_blank'>Go live</a></button>
+              <a href='https://github.com/crusher8010/damaged-muscle-4612' target='_blank'><button  className="project-github-link">Github</button></a>
+              <a href='https://magenta-eclair-cf1ece.netlify.app/' target='_blank'><button className="project-deployed-link">Go live</button></a>
               </div>   
           </div>
         </div>
@@ -287,8 +287,8 @@ window.addEventListener('scroll',setsticky)
              <p className="project-description">A lifestyle store is a retail store selling a wide variety of product categories under a single brand. It is designed to associate a brand with one or another aspirational lifestyle.</p>
              <p className="project-tech-stack">Tech stack : JS | HTML | React | Chackra-UI | Node js | Express js | MongoDB</p>  
              <div className={theme?'_btn':'btn'}>
-              <button  className="project-github-link"><a href='https://github.com/Sagar1079/awake_fashion_project' target='_blank'>Github</a></button>
-              <button className="project-deployed-link"><a href='https://awake-fashion.netlify.app/' target='_blank'>Go live</a></button>
+             <a href='https://github.com/Sagar1079/awake_fashion_project' target='_blank'><button  className="project-github-link">Github</button></a>
+             <a href='https://awake-fashion.netlify.app/' target='_blank'><button className="project-deployed-link">Go live</button></a>
               </div>  
           </div>
         </div>
@@ -302,8 +302,8 @@ window.addEventListener('scroll',setsticky)
              <p className="project-description">Cronometer encourages you to not just count your calories but to focus on your nutrition as a whole. Develop healthy habits Count your calories.</p>
              <p className="project-tech-stack">Tech stack : JS | HTML | CSS</p>  
              <div className={theme?'_btn':'btn'}>
-              <button  className="project-github-link"><a href='https://github.com/mazidul36i/Cronometer_clone' target='_blank'>Github</a></button>
-              <button className="project-deployed-link"><a href='https://cronometerclone.netlify.app/' target='_blank'>Go live</a></button>
+             <a href='https://github.com/mazidul36i/Cronometer_clone' target='_blank'><button  className="project-github-link">Github</button></a>
+             <a href='https://cronometerclone.netlify.app/' target='_blank'><button className="project-deployed-link">Go live</button></a>
               </div>   
           </div>
         </div>
@@ -318,8 +318,8 @@ window.addEventListener('scroll',setsticky)
              <p className="project-description">Jefit is the ultimate fitness, bodybuilding and workout application for all individuals looking for that extra step and motivation to get back into the gym</p>
              <p className="project-tech-stack">Tech stack : JS | HTML | React | Chackra-UI</p>  
              <div className={theme?'_btn':'btn'}>
-              <button  className="project-github-link"><a href='https://github.com/manojmogal007/Jefit_clone' target='_blank'>Github</a></button>
-              <button className="project-deployed-link"><a href='https://preeminent-piroshki-a94ec2.netlify.app/' target='_blank'>Go live</a></button>
+             <a href='https://github.com/manojmogal007/Jefit_clone' target='_blank'><button  className="project-github-link">Github</button></a>
+             <a href='https://preeminent-piroshki-a94ec2.netlify.app/' target='_blank'><button className="project-deployed-link">Go live</button></a>
               </div>  
           </div>
         </div>
@@ -334,8 +334,8 @@ window.addEventListener('scroll',setsticky)
              <p className="project-description">KFC is an American fast food restaurant chain that specializes in fried chicken.It is the world's second-largest restaurant chain after McDonald's.</p>
              <p className="project-tech-stack">Tech stack : JS | HTML | React | Chackra-UI</p>  
              <div className={theme?'_btn':'btn'}>
-              <button  className="project-github-link"><a href='https://github.com/manojmogal007/KFC_clone' target='_blank'>Github</a></button>
-              <button className="project-deployed-link"><a href='https://my-app-gilt-beta.vercel.app/' target='_blank'>Go live</a></button>
+             <a href='https://github.com/manojmogal007/KFC_clone' target='_blank'><button  className="project-github-link">Github</button></a>
+             <a href='https://my-app-gilt-beta.vercel.app/' target='_blank'><button className="project-deployed-link">Go live</button></a>
               </div>  
           </div>
         </div>

@@ -244,27 +244,27 @@
 .btn,._btn{
   margin-top: 20px;
 }
-.btn>button{
+.btn button{
   border: 1px solid black;
   padding: 3px 0px;
   margin: 3%;
   width: 40%;
   border-radius: 5px;
 }
-._btn>button{
+._btn button{
   border: 1px solid white;
   padding: 3px 0px;
   margin: 3%;
   width: 40%;
   border-radius: 5px;
 }
-.btn>button:hover{
+.btn button:hover{
   background-color: white;
   color: black;
   transition: 0.8s ease;
   border: 1px solid black;
 }
-._btn>button:hover{
+._btn button:hover{
   background-color: white;
   color: black;
   transition: 0.8s ease;
