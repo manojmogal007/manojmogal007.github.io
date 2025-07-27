@@ -1,0 +1,26 @@
+@keyframes fall {
+  0% {
+    /* transform: translateY(0%) translateX(var(--x)) rotate(-45deg); */
+    transform: translateY(-50%) translateX(var(--x));
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(120vh) translateX(var(--x));
+    opacity: 0;
+  }
+}
+
+@keyframes colorShift {
+  0% {
+    background-color: grey;
+  }
+  50% {
+    background-color: grey;
+  }
+  100% {
+    background-color: grey;
+  }
+}
