@@ -2,8 +2,8 @@ import React from 'react'
 
 function Projects() {
   return (
-    <div>
-      
+   <div id="projects" className="w-full h-[500px]">
+      Projects
     </div>
   )
 }

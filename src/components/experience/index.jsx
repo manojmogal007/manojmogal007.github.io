@@ -2,8 +2,8 @@ import React from 'react'
 
 function Experience() {
   return (
-    <div>
-      
+    <div id="experience" className="w-full h-[500px]">
+      Experience
     </div>
   )
 }

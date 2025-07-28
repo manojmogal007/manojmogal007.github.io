@@ -14,11 +14,11 @@ function App() {
       <Background count={5} />
       <Navbar />
       <Hero />
-      <About />
+      {/* <About />
       <Skills />
-      <Projects />
       <Experience />
-      <Footer />
+      <Projects />
+      <Footer /> */}
     </div>
   );
 }
