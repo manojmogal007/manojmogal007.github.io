@@ -141,7 +141,7 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-0 bg-[#1b1b1b]">
+    <section id="skills" className="py-0">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-white text-center mb-12">
           My Skills

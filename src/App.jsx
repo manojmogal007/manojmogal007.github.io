@@ -8,19 +8,24 @@ import Footer from "./components/footer";
 import Skills from "./components/skills";
 import Background from "./components/background";
 import Connect from "./components/connect/Connect";
+import TerminalSection from "./components/terminal/TerminalSection";
 
 function App() {
   return (
-    <div class="w-full bg-[#1b1b1b] text-white h-dvh">
-      <Background count={10} />
-      <Navbar />
+    <div class="w-full text-white h-dvh">
+      {/* <Background count={10} /> */}
       <Hero />
-      {/* <About /> */}
-      <Skills />
-      {/* <Experience /> */}
-      <Projects />
-      <Footer />
-      <Connect />
+      <div id="hero" className="w-full h-dvh bg-tansparent" />
+      <div className="bg-[#1b1b1b]">
+        <Navbar />
+        {/* <About /> */}
+        {/* <TerminalSection /> */}
+        <Skills />
+        {/* <Experience /> */}
+        <Projects />
+        <Footer />
+        <Connect />
+      </div>
     </div>
   );
 }
