@@ -7,18 +7,20 @@ import Experience from "./components/experience";
 import Footer from "./components/footer";
 import Skills from "./components/skills";
 import Background from "./components/background";
+import Connect from "./components/connect/Connect";
 
 function App() {
   return (
     <div class="w-full bg-[#1b1b1b] text-white h-dvh">
-      <Background count={5} />
+      <Background count={10} />
       <Navbar />
       <Hero />
-      {/* <About />
+      {/* <About /> */}
       <Skills />
-      <Experience />
+      {/* <Experience /> */}
       <Projects />
-      <Footer /> */}
+      <Footer />
+      <Connect />
     </div>
   );
 }

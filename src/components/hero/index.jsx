@@ -3,7 +3,7 @@ import TextSwapper from "./TextSwapper";
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center justify-center h-dvh">
+    <div id="hero" className="flex flex-col items-center justify-center h-dvh">
       <div className="flex flex-col items-center text-center px-4">
         <div className="flex items-center gap-3">
           <span className="text-gray-400 tracking-widest text-base sm:text-lg md:text-xl lg:text-2xl">
