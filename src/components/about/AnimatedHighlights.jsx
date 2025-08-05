@@ -20,11 +20,7 @@ export default function BrushHighlights({ text, highlights }) {
         typeof part === "string"
           ? part
               .split(new RegExp(`(${word})`, "gi"))
-              .map((chunk) =>
-                chunk.toLowerCase() === word.toLowerCase()
-                  ? { highlight: word }
-                  : chunk
-              )
+              .map((chunk) => (chunk === word ? { highlight: word } : chunk))
           : [part]
       );
     });
@@ -34,14 +30,14 @@ export default function BrushHighlights({ text, highlights }) {
   const parts = getHighlightedParts();
 
   return (
-    <p className="text-xl leading-relaxed">
+    <p className="leading-relaxed text-gray-400 mb-3">
       {parts.map((part, i) =>
         typeof part === "string" ? (
           part
         ) : (
           <span key={i} className="relative inline-block mx-1">
             {/* SVG brush background */}
-            <svg
+            {/* <svg
               className={`absolute top-[15%] left-0 -translate-y-1/2 h-[2.5em] w-full transition-all duration-700 ease-out
     ${
       activeIndexes.includes(highlights.indexOf(part.highlight))
@@ -64,8 +60,8 @@ export default function BrushHighlights({ text, highlights }) {
                 strokeWidth="15"
                 strokeLinecap="round"
               />
-            </svg>
-            <span className="relative z-10 font-semibold">
+            </svg> */}
+            <span className="relative z-10 font-semibold text-white">
               {part.highlight}
             </span>
           </span>

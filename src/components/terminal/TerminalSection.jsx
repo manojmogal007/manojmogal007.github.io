@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 
 const intialState = {
   cmd: "welcome",
-  output: `Hi, I'm Manoj Mogal, a Software Developer.\n\n Welcome to my interactive portfolio terminal!\n Type 'help' to see available commands.`,
+  output: `Hi, I'm Manoj Mogal, a Frontend Developer.\n\n Welcome to my interactive portfolio terminal!\n Type 'help' to see available commands.`,
 };
 export default function TerminalSection() {
   const [history, setHistory] = useState([intialState]);
@@ -12,8 +12,10 @@ export default function TerminalSection() {
   const containerRef = useRef(null);
 
   const commands = {
-    about: "I'm a React developer passionate about building cool projects.",
-    projects: "Project 1: Soundtrack App\nProject 2: Portfolio Website",
+    about:
+      `I'm a frontend developer driven by a passion for crafting intuitive, accessible, and pixel-perfect user interfaces. I thrive at the intersection of design
+       and engineering—where aesthetics meet performance. My work is fueled by a deep commitment to building experiences that are not just visually striking, but also fast, responsive, and user focused. Every detail matters—because great design isn’t just seen, it’s felt.\nCurrently, I’m a Frontend developer at Portqii, where I specialize in building accessible, high-quality UI components that form the foundation of our platform’s user interface. My focus is on ensuring that every interaction meets modern web accessibility standards delivering inclusive, performant, and seamless experiences for all users.\nOutside of coding, you’ll often find me trekking through nature, riding bike on roads, or just unwinding in the hills.`,
+    projects: "Project 1: Audienz.ai\nProject 2: UII Console",
     contact: "Email: manojpatil7076@gmail.com",
   };
 
@@ -83,7 +85,7 @@ export default function TerminalSection() {
   }, [history]);
 
   return (
-    <div className="bg-gray-900 rounded-xl max-w-3xl mx-auto mt-20 shadow-lg z-70">
+    <div className="relative backdrop-blur rounded-xl w-[100%] mx-auto mt-15 shadow-lg z-70 h-[100%]">
       {/* <div className="flex items-center space-x-2 px-4 py-2 bg-gray-800 rounded-t-xl">
         <span className="w-3 h-3 bg-red-500 rounded-full"></span>
         <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
@@ -92,7 +94,7 @@ export default function TerminalSection() {
 
       <div
         ref={containerRef}
-        className="p-4 font-mono text-white h-96 overflow-y-auto cursor-text"
+        className="p-4 font-mono text-white h-[90%] overflow-y-auto cursor-text"
         onClick={() => inputRef.current?.focus()}
       >
         {history.map((item, index) => (

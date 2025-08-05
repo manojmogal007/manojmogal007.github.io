@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
+import { RiTerminalLine } from "react-icons/ri";
+import useAppState from "../../hooks/useAppState";
 
 const Navbar = () => {
-  const links = ["About", "Skills", "Experience", "Projects"];
+  const { toggelTerminal } = useAppState();
+  const links = ["Home", "About", "Skills", "Projects"];
   const [activeSection, setActiveSection] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -42,8 +45,8 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-gray-900 to-gray-800">
       <div className="flex justify-between items-center px-6 md:px-20 py-4">
         {/* Logo */}
-        <div className="flex items-center" onClick={() => handleScroll("hero")}>
-          <span className="text-white text-3xl font-bold tracking-widest">
+        <div className="flex items-center" onClick={() => handleScroll("home")}>
+          <span className="text-white text-3xl font-bold tracking-widest cursor-pointer">
             {"</>"}
           </span>
         </div>
@@ -55,7 +58,7 @@ const Navbar = () => {
               <li key={link}>
                 <button
                   onClick={() => handleScroll(id)}
-                  className={`uppercase text-sm tracking-widest transition-colors ${
+                  className={`uppercase text-sm tracking-widest transition-colors cursor-pointer ${
                     activeSection === id
                       ? "text-white"
                       : "text-gray-400 hover:text-white"
@@ -66,6 +69,14 @@ const Navbar = () => {
               </li>
             );
           })}
+          <li>
+            <button
+              onClick={toggelTerminal}
+              className={`uppercase text-sm tracking-widest transition-colors cursor-pointer}`}
+            >
+              <RiTerminalLine className="text-[20px] text-gray-400 hover:text-white" />
+            </button>
+          </li>
         </ul>
 
         <button

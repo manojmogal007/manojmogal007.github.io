@@ -11,6 +11,14 @@ const projectsConfig = [
      AI‑powered outreach workflows, and interactive dashboards for tracking campaigns, performance metrics, and lead quality.`,
     image: audienz,
     link: "https://app.audienz.ai/",
+    techStack: [
+      "React",
+      "React Router",
+      "Javascript",
+      "Frontegg",
+      "Material UI",
+      "Stigg",
+    ],
   },
   {
     title: "UII Console",
@@ -18,6 +26,13 @@ const projectsConfig = [
      This involved configuring OAuth/SAML providers, handling session management, and ensuring smooth user onboarding within the dashboard environment.`,
     image: uii,
     link: "https://uii-console.portqii.com/",
+    techStack: [
+      "React",
+      "React Router",
+      "Javascript",
+      "Authkit",
+      "TailwindCSS",
+    ],
     reverse: true,
   },
 ];
