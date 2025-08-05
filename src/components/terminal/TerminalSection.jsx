@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 
 const intialState = {
   cmd: "welcome",
-  output: `Hi, I'm Manoj Mogal, a Frontend Developer.\n\n Welcome to my interactive portfolio terminal!\n Type 'help' to see available commands.`,
+  output: `Hi👋, I'm Manoj Mogal, a Frontend Developer💻.\n\n Welcome to my interactive portfolio terminal!\n Type 'help' to see available commands.`,
 };
 export default function TerminalSection() {
   const [history, setHistory] = useState([intialState]);
@@ -13,8 +13,8 @@ export default function TerminalSection() {
 
   const commands = {
     about:
-      `I'm a frontend developer driven by a passion for crafting intuitive, accessible, and pixel-perfect user interfaces. I thrive at the intersection of design
-       and engineering—where aesthetics meet performance. My work is fueled by a deep commitment to building experiences that are not just visually striking, but also fast, responsive, and user focused. Every detail matters—because great design isn’t just seen, it’s felt.\nCurrently, I’m a Frontend developer at Portqii, where I specialize in building accessible, high-quality UI components that form the foundation of our platform’s user interface. My focus is on ensuring that every interaction meets modern web accessibility standards delivering inclusive, performant, and seamless experiences for all users.\nOutside of coding, you’ll often find me trekking through nature, riding bike on roads, or just unwinding in the hills.`,
+      `I'm a Frontend developer💻 driven by a passion for crafting intuitive, accessible, and pixel-perfect user interfaces. I thrive at the intersection of design
+       and engineering—where aesthetics meet performance. My work is fueled by a deep commitment to building experiences that are not just visually striking, but also fast, responsive, and user focused. Every detail matters—because great design isn’t just seen, it’s felt.\nCurrently, I’m a Frontend developer at Portqii, where I specialize in building accessible, high-quality UI components that form the foundation of our platform’s user interface. My focus is on ensuring that every interaction meets modern web accessibility standards delivering inclusive, performant, and seamless experiences for all users.\nOutside of coding, you’ll often find me trekking through nature🏞️, riding bike on roads, or just unwinding in the hills⛰️.`,
     projects: "Project 1: Audienz.ai\nProject 2: UII Console",
     contact: "Email: manojpatil7076@gmail.com",
   };
