@@ -22,7 +22,7 @@ const projectsConfig = [
   },
   {
     title: "UII Console",
-    description: `integrated WorkOS AuthKit to implement secure authentication and SSO capabilities, enabling enterprise-grade login workflows with minimal friction.
+    description: `Integrated WorkOS AuthKit to implement secure authentication and SSO capabilities, enabling enterprise-grade login workflows with minimal friction.
      This involved configuring OAuth/SAML providers, handling session management, and ensuring smooth user onboarding within the dashboard environment.`,
     image: uii,
     link: "https://uii-console.portqii.com/",
