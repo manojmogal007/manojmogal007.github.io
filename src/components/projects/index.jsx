@@ -2,6 +2,8 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import audienz from "../../assets/audienz.png";
 import uii from "../../assets/uii.png";
+import promptflow from "../../assets/promptflow.png";
+import aida from "../../assets/aida.png";
 
 const projectsConfig = [
   {
@@ -13,27 +15,56 @@ const projectsConfig = [
     link: "https://app.audienz.ai/",
     techStack: [
       "React",
-      "React Router",
       "Javascript",
+      "React Router",
+      "Redux Toolkit",
       "Frontegg",
       "Material UI",
       "Stigg",
     ],
   },
   {
-    title: "UII Console",
-    description: `Integrated WorkOS AuthKit to implement secure authentication and SSO capabilities, enabling enterprise-grade login workflows with minimal friction.
-     This involved configuring OAuth/SAML providers, handling session management, and ensuring smooth user onboarding within the dashboard environment.`,
+    title: "Cruxstack",
+    description: `Cruxstack is a real-time user intelligence platform that transforms user behavior data into actionable insights. It helps product teams track user actions, predict behaviors like churn or upgrade readiness, and optimize experiences using a simple SDK, real-time dashboards, and adaptive machine learning—without needing deep ML expertise.`,
     image: uii,
-    link: "https://uii-console.portqii.com/",
+    link: "https://console.cruxstack.com/",
     techStack: [
       "React",
-      "React Router",
       "Javascript",
-      "Authkit",
+      "Typescript",
+      "React Router",
+      "Redux Toolkit",
+      "WorkOS Authkit",
       "TailwindCSS",
     ],
-    reverse: true,
+  },
+  {
+    title: "Aida",
+    description: `A marketing and sales intelligence platform powered by AI that leverages buyer intent data to identify prospects actively in the market and turn them into qualified leads. It offers AI-driven campaign workflows and dynamic dashboards to monitor campaigns, measure performance, and evaluate lead quality.`,
+    image: aida,
+    link: "https://aida2-dev.audienz.ai/dashboard",
+    techStack: [
+      "React",
+      "Javascript",
+      "Typescript",
+      "React Router",
+      "Redux Toolkit",
+      "TailwindCSS",
+    ],
+  },
+  {
+    title: "Promptflow Live",
+    description: `PromptFlow Live is a platform that enables users to create, execute, and reuse AI agent–driven workflows to automate multi-step tasks. It allows seamless real-time collaboration, making workflow design, execution, and iteration faster and more efficient.`,
+    image: promptflow,
+    link: "https://manojmogal007.github.io/prompt-flow/auth/signin",
+    techStack: [
+      "React",
+      "Javascript",
+      "Typescript",
+      "React Router",
+      "Redux Toolkit",
+      "TailwindCSS",
+    ],
   },
 ];
 
@@ -45,7 +76,11 @@ function Projects() {
       </h2>
       <div className="w-full lg:w-[80%] mx-auto">
         {projectsConfig.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <ProjectCard
+            key={project?.title}
+            {...project}
+            reverse={index % 2 === 1}
+          />
         ))}
       </div>
     </div>

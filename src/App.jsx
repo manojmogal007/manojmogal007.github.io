@@ -16,7 +16,7 @@ function App() {
       <Background count={10} />
       <Hero />
       <div id="home" className="w-full h-dvh bg-tansparent" />
-      <div className="bg-[#1b1b1b]">
+      <div className="bg-[#1b1b1b] border-t border-gray-600">
         <Navbar />
         <About />
         <Terminal />

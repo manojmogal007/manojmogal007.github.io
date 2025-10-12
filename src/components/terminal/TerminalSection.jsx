@@ -12,11 +12,11 @@ export default function TerminalSection() {
   const containerRef = useRef(null);
 
   const commands = {
-    about:
-      `I'm a Frontend developer💻 driven by a passion for crafting intuitive, accessible, and pixel-perfect user interfaces. I thrive at the intersection of design
+    about: `I'm a Frontend developer💻 driven by a passion for crafting intuitive, accessible, and pixel-perfect user interfaces. I thrive at the intersection of design
        and engineering—where aesthetics meet performance. My work is fueled by a deep commitment to building experiences that are not just visually striking, but also fast, responsive, and user focused. Every detail matters—because great design isn’t just seen, it’s felt.\nCurrently, I’m a Frontend developer at Portqii, where I specialize in building accessible, high-quality UI components that form the foundation of our platform’s user interface. My focus is on ensuring that every interaction meets modern web accessibility standards delivering inclusive, performant, and seamless experiences for all users.\nOutside of coding, you’ll often find me trekking through nature🏞️, riding bike on roads, or just unwinding in the hills⛰️.`,
-    projects: "Project 1: Audienz.ai\nProject 2: UII Console",
-    contact: "Email: manojpatil7076@gmail.com",
+    projects: "- Audienz.ai\n- Cruxstack\n- Aida\n- Promptflow Live",
+    contact:
+      "Email: manojpatil7076@gmail.com\n Mobile: +91 7219547076\nLinkedin: https://www.linkedin.com/in/manoj-mogal-8830341b2/",
   };
 
   const availableCommands = ["help", ...Object.keys(commands)];
