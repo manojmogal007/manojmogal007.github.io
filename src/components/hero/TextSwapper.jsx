@@ -20,16 +20,18 @@ const TextSwapper = () => {
   //   presets= gentle, wobbly, stiff, slow, molasses
   return (
     <h1
-      className="mt-2 text-yellow-400 uppercase tracking-widest 
-                  text-xs sm:text-lg md:text-xl lg:text-2xl"
+      className="mt-2 text-violet-300 uppercase tracking-widest font-mono
+                  text-lg sm:text-lg md:text-xl lg:text-2xl"
     >
+      {"<"}
       <TextTransition
-        springConfig={presets.molasses}
-        direction="down"
-        delay={1}
+        springConfig={presets.wobbly}
+        direction="up"
+        inline
       >
         {TEXTS[index % TEXTS.length]}
       </TextTransition>
+      {"/>"}
     </h1>
   );
 };

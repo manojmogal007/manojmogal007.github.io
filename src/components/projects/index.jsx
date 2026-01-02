@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useTransform, useScroll } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import audienz from "../../assets/audienz.png";
 import uii from "../../assets/uii.png";
@@ -8,83 +9,85 @@ import aida from "../../assets/aida.png";
 const projectsConfig = [
   {
     title: "Audienz.ai",
-    description: `An AI‑driven marketing and sales intelligence platform that combines buyer intent data with automation to help businesses find 
-    in‑market prospects and convert them into qualified leads. I contributed to building key modules including lead discovery and verification,
-     AI‑powered outreach workflows, and interactive dashboards for tracking campaigns, performance metrics, and lead quality.`,
+    description: "AI-driven marketing intelligence platform.",
+    longDescription: "Combines buyer intent data with automation to help businesses find in-market prospects and convert them into qualified leads.",
     image: audienz,
     link: "https://app.audienz.ai/",
-    techStack: [
-      "React",
-      "Javascript",
-      "React Router",
-      "Redux Toolkit",
-      "Frontegg",
-      "Material UI",
-      "Stigg",
-    ],
+    color: "from-blue-400 to-cyan-300",
+    techStack: ["React", "Redux", "MUI"],
   },
   {
     title: "Cruxstack",
-    description: `Cruxstack is a real-time user intelligence platform that transforms user behavior data into actionable insights. It helps product teams track user actions, predict behaviors like churn or upgrade readiness, and optimize experiences using a simple SDK, real-time dashboards, and adaptive machine learning—without needing deep ML expertise.`,
+    description: "Real-time user intelligence dashboard.",
+    longDescription: "Transforms user behavior data into actionable insights for product teams with predictive analytics and adaptive ML.",
     image: uii,
     link: "https://console.cruxstack.com/",
-    techStack: [
-      "React",
-      "Javascript",
-      "Typescript",
-      "React Router",
-      "Redux Toolkit",
-      "WorkOS Authkit",
-      "TailwindCSS",
-    ],
+    color: "from-emerald-400 to-teal-300",
+    techStack: ["React", "TS", "Tailwind"],
   },
   {
     title: "Aida",
-    description: `A marketing and sales intelligence platform powered by AI that leverages buyer intent data to identify prospects actively in the market and turn them into qualified leads. It offers AI-driven campaign workflows and dynamic dashboards to monitor campaigns, measure performance, and evaluate lead quality.`,
+    description: "Prospect identification & lead qualification.",
+    longDescription: "Leverages intent data to identify active prospects and offers AI-driven campaign workflows.",
     image: aida,
     link: "https://aida2-dev.audienz.ai/dashboard",
-    techStack: [
-      "React",
-      "Javascript",
-      "Typescript",
-      "React Router",
-      "Redux Toolkit",
-      "TailwindCSS",
-    ],
+    color: "from-fuchsia-400 to-pink-300",
+    techStack: ["React", "TS", "Redux"],
   },
   {
     title: "Promptflow Live",
-    description: `PromptFlow Live is a platform that enables users to create, execute, and reuse AI agent–driven workflows to automate multi-step tasks. It allows seamless real-time collaboration, making workflow design, execution, and iteration faster and more efficient.`,
+    description: "AI Agent workflow automation.",
+    longDescription: "Enables users to create, execute, and reuse AI agent-driven workflows for multi-step tasks.",
     image: promptflow,
     link: "https://manojmogal007.github.io/prompt-flow/auth/signin",
-    techStack: [
-      "React",
-      "Javascript",
-      "Typescript",
-      "React Router",
-      "Redux Toolkit",
-      "TailwindCSS",
-    ],
+    color: "from-amber-400 to-orange-300",
+    techStack: ["React", "TS", "Tailwind"],
   },
 ];
 
-function Projects() {
-  return (
-    <div id="projects" className="w-full">
-      <h2 className="text-3xl font-bold text-white text-center mb-5">
-        Projects
-      </h2>
-      <div className="w-full lg:w-[80%] mx-auto">
-        {projectsConfig.map((project, index) => (
-          <ProjectCard
-            key={project?.title}
-            {...project}
-            reverse={index % 2 === 1}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
+const HorizontalProjects = () => {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
 
-export default Projects;
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
+
+  return (
+    <section id="projects" ref={targetRef} className="relative h-[300vh] bg-slate-950">
+      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+
+        {/* Section Title - Fixed */}
+        <div className="absolute top-12 left-12 z-20 mix-blend-difference pointer-events-none">
+          <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter opacity-20">
+            SELECTED WORKS
+          </h2>
+        </div>
+
+        <motion.div style={{ x }} className="flex gap-24 px-24">
+
+          {/* Intro Slide */}
+          <div className="flex-shrink-0 w-[500px] h-[60vh] flex flex-col justify-center">
+            <h2 className="text-6xl font-bold text-white mb-6 leading-tight">
+              Premium <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-fuchsia-400">
+                Digital <br /> Experiences
+              </span>
+            </h2>
+            <p className="text-xl text-slate-400">
+              Scroll down to explore a curated gallery of my recent technical projects.
+            </p>
+          </div>
+
+          {/* Project Cards */}
+          {projectsConfig.map((project, i) => (
+            <ProjectCard key={i} {...project} index={i} />
+          ))}
+
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default HorizontalProjects;

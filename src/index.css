@@ -1,38 +1,118 @@
 @import "tailwindcss";
 
 @layer base {
-  * {
-    margin: 0;
-    padding: 0;
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-200 antialiased;
+    overflow-x: hidden;
   }
 }
 
-:root {
-  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: cursive;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #1b1b1b;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@keyframes single-bounce {
-  0%,
-  100% {
-    transform: translateY(0);
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-fuchsia-400;
   }
-  50% {
-    transform: translateY(-10px);
-  }
-}
 
-.hover\\:single-bounce:hover {
-  animation: single-bounce 0.4s ease;
+  .glass {
+    @apply bg-slate-950/70 backdrop-blur-md border-b border-white/10;
+  }
+
+  /* Heartbeat Animation - Lub-dub rhythm */
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+
+    15% {
+      transform: scale(1.05);
+    }
+
+    30% {
+      transform: scale(1);
+    }
+
+    45% {
+      transform: scale(1.05);
+    }
+
+    60% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Ripple expansion matching heartbeat */
+  @keyframes ripple-heart {
+    0% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+
+    50% {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+
+    100% {
+      transform: scale(2.2);
+      opacity: 0;
+    }
+  }
+
+  /* Soft Pulse - Gentle opacity pulse */
+  @keyframes pulse-soft {
+
+    0%,
+    100% {
+      opacity: 0.6;
+    }
+
+    50% {
+      opacity: 0.9;
+    }
+  }
+
+  /* Fade In Delayed */
+  @keyframes fade-in-delayed {
+    0% {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Animation Classes */
+  .animate-heartbeat {
+    animation: heartbeat 2s ease-in-out infinite;
+  }
+
+  .animate-ripple-heart {
+    animation: ripple-heart 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 2s ease-in-out infinite;
+  }
+
+  .animate-fade-in-delayed {
+    animation: fade-in-delayed 0.8s ease-out 0.5s both;
+  }
+
+  /* Text Shadow Glow */
+  .text-shadow-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+      0 0 20px rgba(167, 139, 250, 0.3),
+      0 0 30px rgba(232, 121, 249, 0.2);
+  }
 }
