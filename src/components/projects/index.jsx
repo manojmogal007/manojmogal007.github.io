@@ -10,25 +10,18 @@ const projectsConfig = [
   {
     title: "Audienz.ai",
     description: "AI-driven marketing intelligence platform.",
-    longDescription: "Combines buyer intent data with automation to help businesses find in-market prospects and convert them into qualified leads.",
+    longDescription:
+      "Combines buyer intent data with automation to help businesses find in-market prospects and convert them into qualified leads.",
     image: audienz,
     link: "https://app.audienz.ai/",
     color: "from-blue-400 to-cyan-300",
     techStack: ["React", "Redux", "MUI"],
   },
   {
-    title: "Cruxstack",
-    description: "Real-time user intelligence dashboard.",
-    longDescription: "Transforms user behavior data into actionable insights for product teams with predictive analytics and adaptive ML.",
-    image: uii,
-    link: "https://console.cruxstack.com/",
-    color: "from-emerald-400 to-teal-300",
-    techStack: ["React", "TS", "Tailwind"],
-  },
-  {
     title: "Aida",
     description: "Prospect identification & lead qualification.",
-    longDescription: "Leverages intent data to identify active prospects and offers AI-driven campaign workflows.",
+    longDescription:
+      "Leverages intent data to identify active prospects and offers AI-driven campaign workflows.",
     image: aida,
     link: "https://aida2-dev.audienz.ai/dashboard",
     color: "from-fuchsia-400 to-pink-300",
@@ -37,10 +30,21 @@ const projectsConfig = [
   {
     title: "Promptflow Live",
     description: "AI Agent workflow automation.",
-    longDescription: "Enables users to create, execute, and reuse AI agent-driven workflows for multi-step tasks.",
+    longDescription:
+      "Enables users to create, execute, and reuse AI agent-driven workflows for multi-step tasks.",
     image: promptflow,
     link: "https://manojmogal007.github.io/prompt-flow/auth/signin",
     color: "from-amber-400 to-orange-300",
+    techStack: ["React", "TS", "Tailwind"],
+  },
+  {
+    title: "Cruxstack",
+    description: "Real-time user intelligence dashboard.",
+    longDescription:
+      "Transforms user behavior data into actionable insights for product teams with predictive analytics and adaptive ML.",
+    image: uii,
+    link: "https://console.cruxstack.com/",
+    color: "from-emerald-400 to-teal-300",
     techStack: ["React", "TS", "Tailwind"],
   },
 ];
@@ -54,9 +58,12 @@ const HorizontalProjects = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
 
   return (
-    <section id="projects" ref={targetRef} className="relative h-[300vh] bg-slate-950">
+    <section
+      id="projects"
+      ref={targetRef}
+      className="relative h-[300vh] bg-slate-950"
+    >
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-
         {/* Section Title - Fixed */}
         <div className="absolute top-12 left-12 z-20 mix-blend-difference pointer-events-none">
           <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter opacity-20">
@@ -65,7 +72,6 @@ const HorizontalProjects = () => {
         </div>
 
         <motion.div style={{ x }} className="flex gap-24 px-24">
-
           {/* Intro Slide */}
           <div className="flex-shrink-0 w-[500px] h-[60vh] flex flex-col justify-center">
             <h2 className="text-6xl font-bold text-white mb-6 leading-tight">
@@ -75,7 +81,8 @@ const HorizontalProjects = () => {
               </span>
             </h2>
             <p className="text-xl text-slate-400">
-              Scroll down to explore a curated gallery of my recent technical projects.
+              Scroll down to explore a curated gallery of my recent technical
+              projects.
             </p>
           </div>
 
@@ -83,7 +90,6 @@ const HorizontalProjects = () => {
           {projectsConfig.map((project, i) => (
             <ProjectCard key={i} {...project} index={i} />
           ))}
-
         </motion.div>
       </div>
     </section>
