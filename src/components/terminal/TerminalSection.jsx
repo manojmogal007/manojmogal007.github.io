@@ -30,6 +30,10 @@ export default function TerminalSection() {
     if (cmd === "clear") {
       intiateClear();
       return;
+    } else if (cmd === 'bike') {
+      localStorage.setItem('bike', 'true');
+      window.dispatchEvent(new Event('bikeModeChange'));
+      return;
     }
     const trimmed = cmd.trim().toLowerCase();
     const fullOutput =

@@ -10,8 +10,10 @@ import Background from "./components/background";
 import Connect from "./components/connect/Connect";
 import Contact from "./components/contact";
 import Terminal from "./components/terminal/Terminal";
+import BikeSection from "./components/bike";
 
 function App() {
+  
   return (
     <div className="w-full min-h-screen bg-slate-950 text-slate-200 selection:bg-violet-500/30">
       <Navbar />
@@ -21,6 +23,7 @@ function App() {
         <Terminal />
         <Skills />
         <Projects />
+        <BikeSection />
       </div>
       <Contact />
       <Connect />
