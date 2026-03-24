@@ -5,6 +5,7 @@ import audienz from "../../assets/audienz.png";
 import uii from "../../assets/uii.png";
 import promptflow from "../../assets/promptflow.png";
 import aida from "../../assets/aida.png";
+import securityCompliance from "../../assets/security-compliance.png";
 
 const projectsConfig = [
   {
@@ -46,6 +47,17 @@ const projectsConfig = [
     link: "https://console.cruxstack.com/",
     color: "from-emerald-400 to-teal-300",
     techStack: ["React", "TS", "Tailwind"],
+  },
+  {
+    title: "Security & Compliance",
+    description:
+      "Real-time API monitoring and security across marketing platforms.",
+    longDescription:
+      "Ensures secure API operations across multiple platforms by monitoring integrations, establishing behavioral baselines, and detecting anomalies like data misuse or unauthorized access. Provides automated alerting through Slack, Teams, and Email.",
+    image: securityCompliance,
+    link: "https://apps.portqii.com/monitor/admin/dashboard",
+    color: "from-blue-600 to-cyan-400",
+    techStack: ["React", "Tailwind", "Axios"],
   },
 ];
 

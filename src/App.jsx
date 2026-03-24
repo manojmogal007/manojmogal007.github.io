@@ -13,7 +13,6 @@ import Terminal from "./components/terminal/Terminal";
 import BikeSection from "./components/bike";
 
 function App() {
-  
   return (
     <div className="w-full min-h-screen bg-slate-950 text-slate-200 selection:bg-violet-500/30">
       <Navbar />
@@ -22,6 +21,7 @@ function App() {
         <About />
         <Terminal />
         <Skills />
+        {/* <Experience /> */}
         <Projects />
         <BikeSection />
       </div>
