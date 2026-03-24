@@ -45,7 +45,7 @@ const Contact = () => {
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-400 text-sm">
           <div className="flex gap-8">
             <span className="hover:text-white transition-colors cursor-pointer">
-              © 2025 Manoj Mogal
+              © 2026 Manoj Mogal
             </span>
             {/* <span className="hover:text-white transition-colors cursor-pointer">Local Time: {new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true })}</span> */}
           </div>

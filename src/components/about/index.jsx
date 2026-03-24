@@ -44,13 +44,13 @@ function About() {
             <div className="grid grid-cols-3 gap-4 w-full">
               <StatsCard
                 icon={AiOutlineCode}
-                value="2"
+                value="2+"
                 label="Years"
                 color="text-cyan-400"
               />
               <StatsCard
                 icon={AiOutlineProject}
-                value="4+"
+                value="5+"
                 label="Projects"
                 color="text-violet-400"
               />
