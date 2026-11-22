@@ -4,7 +4,14 @@ import { motion } from "framer-motion";
 import useAppState from "../../hooks/useAppState";
 
 const Navbar = () => {
-  const { toggelTerminal } = useAppState();
+  const { toggelTerminal, terminalOpen, terminalWidth } = useAppState();
+  const offset = terminalOpen ? terminalWidth : 0;
+  // Keep the floating docks centered over the (narrower) content column
+  // when the terminal panel is open.
+  const dockStyle = {
+    left: `calc(50% - ${offset / 2}px)`,
+    transition: "left 300ms ease",
+  };
   const links = [
     { name: "Home", icon: RiHomeLine, id: "home" },
     { name: "About", icon: RiUserLine, id: "about" },
@@ -52,7 +59,10 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop: Top Floating Dock */}
-      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 hidden md:flex">
+      <nav
+        style={dockStyle}
+        className="fixed top-6 -translate-x-1/2 z-50 hidden md:flex"
+      >
         <div className="flex items-center gap-2 px-2 py-2 bg-slate-900/50 backdrop-blur-xl border border-white/10 rounded-full shadow-lg shadow-black/20">
           {links.map((link) => {
             const isActive = activeSection === link.id;
@@ -91,7 +101,10 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile: Bottom Floating Dock */}
-      <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex md:hidden w-auto max-w-[90%]">
+      <nav
+        style={dockStyle}
+        className="fixed bottom-6 -translate-x-1/2 z-50 flex md:hidden w-auto max-w-[90%]"
+      >
         <div className="flex items-center justify-between gap-1 px-4 py-3 bg-slate-900/80 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl shadow-black/50">
           {links.map((link) => {
             const isActive = activeSection === link.id;

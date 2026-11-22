@@ -2,12 +2,12 @@ import React from "react";
 import TextTransition, { presets } from "react-text-transition";
 
 const TEXTS = [
-  "Creative Coder",
-  "Innovative Thinker",
+  "React Specialist",
+  "Design Systems",
+  "Accessibility First",
+  "Pixel Perfectionist",
+  "Performance Focused",
   "UI/UX Craftsman",
-  "Problem Solver",
-  "Self-Believer",
-  "Visionary Builder",
 ];
 const TextSwapper = () => {
   const [index, setIndex] = React.useState(0);

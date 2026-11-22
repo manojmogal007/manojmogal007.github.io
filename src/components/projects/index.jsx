@@ -6,8 +6,21 @@ import uii from "../../assets/uii.png";
 import promptflow from "../../assets/promptflow.png";
 import aida from "../../assets/aida.png";
 import securityCompliance from "../../assets/security-compliance.png";
+import agentstudio from "../../assets/agentstudio.jpeg"
 
-const projectsConfig = [
+export const projectsConfig = [
+
+  
+  {
+    title: "Agent Studio",
+    description: "AI-powered marketing automation workspace.",
+    longDescription:
+      "A unified AI-powered workspace that enables marketing teams to automate and manage workflows across Oracle Eloqua and Adobe Marketo using specialized AI agents. Streamlines campaign QA, naming validation, calendar conflict detection, instance cleanup, security monitoring, version control, and lead imports through chat-based interactions and approval-driven execution.",
+    image: agentstudio,
+    link: "https://manojmogal007.github.io/prompt-flow/auth/signin",
+    color: "from-fuchsia-400 to-pink-300",
+    techStack: ["React", "TS", "Tailwind"]
+  },
   {
     title: "Audienz.ai",
     description: "AI-driven marketing intelligence platform.",
@@ -18,15 +31,36 @@ const projectsConfig = [
     color: "from-blue-400 to-cyan-300",
     techStack: ["React", "Redux", "MUI"],
   },
+  // {
+  //   title: "Aida",
+  //   description: "Prospect identification & lead qualification.",
+  //   longDescription:
+  //     "Leverages intent data to identify active prospects and offers AI-driven campaign workflows.",
+  //   image: aida,
+  //   link: "https://aida2-dev.audienz.ai/dashboard",
+  //   color: "from-fuchsia-400 to-pink-300",
+  //   techStack: ["React", "TS", "Redux"],
+  // },
+  // {
+  //   title: "Cruxstack",
+  //   description: "Real-time user intelligence dashboard.",
+  //   longDescription:
+  //     "Transforms user behavior data into actionable insights for product teams with predictive analytics and adaptive ML.",
+  //   image: uii,
+  //   link: "https://console.cruxstack.com/",
+  //   color: "from-emerald-400 to-teal-300",
+  //   techStack: ["React", "TS", "Tailwind"],
+  // },
   {
-    title: "Aida",
-    description: "Prospect identification & lead qualification.",
+    title: "Security & Compliance",
+    description:
+      "Real-time API monitoring and security across marketing platforms.",
     longDescription:
-      "Leverages intent data to identify active prospects and offers AI-driven campaign workflows.",
-    image: aida,
-    link: "https://aida2-dev.audienz.ai/dashboard",
-    color: "from-fuchsia-400 to-pink-300",
-    techStack: ["React", "TS", "Redux"],
+      "Ensures secure API operations across multiple platforms by monitoring integrations, establishing behavioral baselines, and detecting anomalies like data misuse or unauthorized access. Provides automated alerting through Slack, Teams, and Email.",
+    image: securityCompliance,
+    link: "https://apps.portqii.com/monitor/admin/dashboard",
+    color: "from-emerald-400 to-teal-300",
+    techStack: ["React", "Tailwind", "Axios"],
   },
   {
     title: "Promptflow Live",
@@ -37,27 +71,6 @@ const projectsConfig = [
     link: "https://manojmogal007.github.io/prompt-flow/auth/signin",
     color: "from-amber-400 to-orange-300",
     techStack: ["React", "TS", "Tailwind"],
-  },
-  {
-    title: "Cruxstack",
-    description: "Real-time user intelligence dashboard.",
-    longDescription:
-      "Transforms user behavior data into actionable insights for product teams with predictive analytics and adaptive ML.",
-    image: uii,
-    link: "https://console.cruxstack.com/",
-    color: "from-emerald-400 to-teal-300",
-    techStack: ["React", "TS", "Tailwind"],
-  },
-  {
-    title: "Security & Compliance",
-    description:
-      "Real-time API monitoring and security across marketing platforms.",
-    longDescription:
-      "Ensures secure API operations across multiple platforms by monitoring integrations, establishing behavioral baselines, and detecting anomalies like data misuse or unauthorized access. Provides automated alerting through Slack, Teams, and Email.",
-    image: securityCompliance,
-    link: "https://apps.portqii.com/monitor/admin/dashboard",
-    color: "from-blue-600 to-cyan-400",
-    techStack: ["React", "Tailwind", "Axios"],
   },
 ];
 

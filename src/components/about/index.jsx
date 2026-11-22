@@ -4,6 +4,39 @@ import {
   AiOutlineProject,
   AiOutlineCoffee,
 } from "react-icons/ai";
+import { projectsConfig } from "../projects";
+
+// Career start date — years of experience is derived from this so the
+// stat never needs manual updating.
+const CAREER_START = new Date(2024, 0, 1); // Jan 2024
+
+const yearsOfExperience = () => {
+  const today = new Date();
+
+  let years = today.getFullYear() - CAREER_START.getFullYear();
+  let months = today.getMonth() - CAREER_START.getMonth();
+
+  if (today.getDate() < CAREER_START.getDate()) {
+    months--;
+  }
+
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
+  if (months === 0 && today.getDate() === CAREER_START.getDate()) {
+    return `${years}`;
+  }
+
+  if (months > 8) {
+    return `~${years + 1}`;
+  }
+
+  return `${years}+`;
+};
+
+const projectCount = () => `${projectsConfig.length}+`;
 
 const StatsCard = ({ icon: Icon, value, label, color }) => (
   <div className="flex flex-col items-center p-4 bg-slate-900/50 rounded-2xl border border-white/5 backdrop-blur-sm hover:bg-slate-800/50 transition-colors">
@@ -44,13 +77,13 @@ function About() {
             <div className="grid grid-cols-3 gap-4 w-full">
               <StatsCard
                 icon={AiOutlineCode}
-                value="2+"
+                value={yearsOfExperience()}
                 label="Years"
                 color="text-cyan-400"
               />
               <StatsCard
                 icon={AiOutlineProject}
-                value="5+"
+                value={projectCount()}
                 label="Projects"
                 color="text-violet-400"
               />
