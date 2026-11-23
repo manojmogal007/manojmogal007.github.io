@@ -17,7 +17,7 @@ export const projectsConfig = [
     longDescription:
       "A unified AI-powered workspace that enables marketing teams to automate and manage workflows across Oracle Eloqua and Adobe Marketo using specialized AI agents. Streamlines campaign QA, naming validation, calendar conflict detection, instance cleanup, security monitoring, version control, and lead imports through chat-based interactions and approval-driven execution.",
     image: agentstudio,
-    link: "https://manojmogal007.github.io/prompt-flow/auth/signin",
+    link: "https://agentstudio.portqii.com",
     color: "from-fuchsia-400 to-pink-300",
     techStack: ["React", "TS", "Tailwind"]
   },

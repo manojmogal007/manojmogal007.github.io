@@ -45,7 +45,7 @@ function Hero() {
       setTimeout(() => {
         setPhase("done");
         sessionStorage.setItem(SESSION_KEY, "1");
-      }, typingDone + 900)
+      }, typingDone + 2000)
     );
 
     const scheduled = timers.current;

@@ -11,7 +11,7 @@ const Skills = () => {
       {/* View toggle */}
       <div className="flex justify-center mb-8">
         <div className="inline-flex p-1 rounded-full bg-slate-900/60 border border-white/10">
-          {[
+          {/* {[
             { id: "grid", label: "Grid" },
             { id: "field", label: "Interactive" },
           ].map((opt) => (
@@ -26,7 +26,7 @@ const Skills = () => {
             >
               {opt.label}
             </button>
-          ))}
+          ))} */}
         </div>
       </div>
 
